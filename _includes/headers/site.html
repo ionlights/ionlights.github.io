@@ -1,0 +1,50 @@
+<header>
+  <div class="lock-down">
+    <div class="site-header">
+      <a class="site-logo" href="{{ site.baseurl }}">
+        <h2> {{ site.heading }} </h2>
+      </a>
+    </div>
+    <nav>
+      <ul class="site-nav">
+        {% for node in site.pages %}
+          {% if node.nav_listed %}
+            <li>
+              {% if page.url == node.url %}
+                <a class="nav-link active" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+              {% else %}
+                <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+        <!-- <li><a class="nav-link" href="http://precis.ionlights.com/u/ionlights/public">Résumé</a></li> -->
+        <li><a class="nav-link" href="https://github.com/{{ site.social.github.uname }}/ama/issues/new">Contact</a></li>
+      </ul>
+    </nav>
+
+    <ul class="social-icons">
+      <li>
+        {%
+          include icons/social.html
+          uname=site.social.github.uname
+          icon=site.social.github.icon
+          %}
+      </li>
+      <li>
+        {%
+          include icons/social.html
+          uname=site.social.twitter.uname
+          icon=site.social.twitter.icon
+          %}
+      </li>
+      <li>
+        {%
+          include icons/social.html
+          uname=site.social.linkedin.uname
+          icon=site.social.linkedin.icon
+          %}
+      </li>
+    </ul>
+  </div>
+</header>

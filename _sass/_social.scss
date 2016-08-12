@@ -1,0 +1,82 @@
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+  background: #e0e1e2;
+  margin-right: 0.25rem;
+  color: rgba(0,0,0,.6);
+  text-decoration: none;
+  // background: #0b1923;
+
+  &:hover {
+    &:after, &:before {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    &:before {
+      transform: translateY(0) rotate(45deg);
+    }
+  }
+
+  &:after, &:before {
+    opacity: 0;
+    bottom: 100%;
+    color: #fefefe;
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    background: #0b1923;
+    white-space: nowrap;
+    transition: 200ms ease-in-out;
+    transform: translateY(0.25rem);
+  }
+
+  i {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  &:before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-bottom: 0.2rem;
+    transform: translateY(0.25rem) rotate(45deg);
+    right: calc(2rem - (1.189207115 * 2 * 0.5rem));
+  }
+
+  &:after {
+    right: 0;
+    margin-bottom: 0.45rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    content: attr(data-tooltip);
+    font-size: $small-font-size;
+  }
+}
+
+.linkedin {
+  color: #fefefe !important;
+  background: #0077b5 !important;
+}
+
+.github {
+  color: #333333 !important;
+  background: #999999 !important;
+}
+
+.twitter {
+  color: #fefefe !important;
+  background: #1da1f2 !important;
+}
+
+.dribbble {
+
+}

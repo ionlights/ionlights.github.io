@@ -1,0 +1,41 @@
+# Site settings
+title: The Digital Abode of Ion Lights
+heading: Ion Lights
+email: john@ionlights.com
+description:
+baseurl: ""
+url: "http://ionlights.com"
+social:
+  github:
+    uname: ionlights
+    icon: github
+  twitter:
+    uname: ionlights
+    icon: twitter
+  dribbble:
+    uname: ionlights
+    icon: dribbble
+  linkedin:
+    uname: in/ionlights
+    icon: linkedin
+
+# Build settings
+markdown: kramdown
+
+# gems: [github-pages]
+collections:
+  builds:
+    output: true
+    permalink: builds/:path
+    title: Projects
+
+defaults:
+  - scope:
+      type: builds
+    values:
+      layout: builds
+  - scope:
+      type: posts
+      path: ""
+    values:
+      permalink: /:categories/:year/:title

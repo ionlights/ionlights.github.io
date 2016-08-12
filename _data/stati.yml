@@ -1,0 +1,10 @@
+- value: planned
+  en: Planned
+- value: in-progress
+  en: In the Works
+- value: finished
+  en: Completed
+- value: maintaining
+  en: Still Maintaining
+- value: not-maintaining
+  en: No Longer Maintaining

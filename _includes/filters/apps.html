@@ -1,0 +1,8 @@
+<div>
+{% assign grouped = {{ site.builds | group_by: "type"}} %}
+{% for group in grouped %}
+  {% if group.name == "app" %}
+    <p> </p>
+  {% endif %}
+{% endfor %}
+</div>

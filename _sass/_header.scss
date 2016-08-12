@@ -1,0 +1,133 @@
+header {
+  top: 0;
+  width: 25%;
+  height: 100vh;
+  color: #d9dcdf;
+  // color: #b0cfe5;
+  // color: #fefefe;
+  position: fixed;
+  padding: 1rem 0;
+  max-width: 22rem;
+  background: #304859;
+  // background: #0b1923;
+  // background: linear-gradient(#006dff, #0079c0);
+  background: linear-gradient(to top, #263f59, #1a3566);
+
+  div.lock-down {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+
+    div.site-header {
+      padding: 0 1rem;
+      a.site-logo {
+        h2 {
+          // color: #d9dcdf;
+          color: #fafbfc;
+          font-size: 2 * $base-font-size;
+        }
+      }
+    }
+
+  }
+  nav {
+    ul.site-nav {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: block;
+      li {
+        a.nav-link {
+          width: 100%;
+          color: #fafbfc;
+          display: block;
+          padding: 0 1rem;
+          position: relative;
+          text-decoration: none;
+          font-size: $base-font-size;
+          padding: 0 $base-font-size;
+          height: 3 * $base-font-size;
+          line-height: 3 * $base-font-size;
+
+          &:before {
+            top: 0;
+            content: '';
+            height: 100%;
+            width: 0.25rem;
+            position: absolute;
+            background: transparent;
+            transition: 200ms ease-in-out;
+          }
+
+          &:before {
+            left: -0.25rem;
+          }
+          &:after {
+            right: 0;
+          }
+
+          &:hover {
+            &:before {
+              left: 0;
+            }
+            &:before, &:after {
+              background: #fafbfc;
+            }
+          }
+
+          &.active {
+            color: $brand-color;
+            background: rgba(39, 53, 71, 0.62);
+            &:before {
+              left: 0;
+              background: $brand-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ul.social-icons {
+    margin: 0;
+    float: right;
+    padding: 1rem;
+    min-height: 2rem;
+
+    li {
+      height: 2rem;
+      list-style: none;
+      display: inline-block;
+
+      @import 'social';
+    }
+  }
+}
+
+@media (max-width: 40rem) {
+  header {
+    height: 4rem;
+    width: 100vw;
+    top: 0;
+    position: relative;
+
+    div.lock-down {
+      position: relative;
+
+      div.site-header {
+        a.site-logo {
+          padding: 0;
+          h2 {
+            margin: 0;
+            font-size: $base-font-size;
+          }
+        }
+      }
+      nav {
+        &:after {
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+---
+layout: default
+title: Builds
+nav_listed: true
+permalink: /builds/
+
+page_title: My Excursions
+---
+<h1> {{ page.page_title }} </h1>
+
+<div class="builds">
+{% assign projects = 0 %}
+{% for project in site.builds %}
+  {% if project.pubd %}
+    {% increment projects %}
+    <article class="project">
+      <div class="heading">
+        <a href="{{ project.url }}">
+          <h2>{{ project.title | titleize }}</h2>
+        </a>
+        {%
+          include icons/social.html
+          uname=project.github
+          icon=site.social.github.icon
+          %}
+      </div>
+      <div class="image"> <img> </div>
+      <p class="description"> {{ project.short_description }} </p>
+    </article>
+  {% endif %}
+{% endfor %}
+{% if projects <= 0 %}
+  <h2> Uh oh! </h2>
+  <p> It looks like I'm busy working on projects, but haven't selected any to showcase! </p>
+{% endif %}
+</div>

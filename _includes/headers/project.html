@@ -1,0 +1,73 @@
+<section class="project-header">
+  <h1> {{ page.title }} </h1>
+  {%
+    include icons/social.html
+    uname=page.github
+    icon=site.social.github.icon
+    %}
+</section>
+
+<!-- <header class="ui borderless project menu">
+
+  <div class="ui right borderless project_category menu">
+    {% if page.platform != "" %}
+      <div class="ui item">
+      {% if page.platform.size > 1 %}
+        <div class="ui top right pointing dropdown green platforms button">
+          Platforms
+          <div class="menu">
+            {% for platform in page.platform %}
+            <div class="disabled item"> {{ site.data.tools.platforms[platform] }} </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% else %}
+        {% assign look = page.platform[0] %}
+        <div class="ui button green platforms">
+          {{ site.data.tools.platforms[look] }}
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if page.languages != "" %}
+      <div class="ui item">
+      {% if page.languages.size > 1 %}
+        <div class="ui top right pointing dropdown teal languagese button">
+          Languages
+          <div class="menu">
+            {% for lang in page.languages %}
+            <div class="disabled item"> {{ site.data.tools.languages[lang] }} </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% else %}
+        {% assign look = page.languages[0] %}
+        <div class="ui button teal languages">
+          {{ site.data.tools.languages[look] }}
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if page.software != "" %}
+    <div class="ui item">
+      {% if page.software.size > 1 %}
+        <div class="ui top right pointing dropdown blue software button">
+          Tools
+          <div class="menu">
+            {% for soft in page.software %}
+            <div class="disabled item"> {{ site.data.tools.software[soft] }} </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% else %}
+        {% assign look = page.software[0] %}
+        <div class="ui button blue languages">
+          {{ site.data.tools.software[look] }}
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</header> -->

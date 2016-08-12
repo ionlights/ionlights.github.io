@@ -1,0 +1,42 @@
+h1, h2, h3, h4, h5, h6, p, dd, dt, a {
+  color: #242d32;
+  text-decoration: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1 {
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 1.34em;
+
+  &:before {
+    bottom: 0;
+    width: 5px;
+    left: -2rem;
+    content: '';
+    height: 100%;
+    position: absolute;
+    background: #009bff;
+  }
+  &:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -0.67em;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+h2 {
+  line-height: 1.5;
+  position: relative;
+}
+
+a:not(.nav-link) {
+  font-weight: bold;
+}

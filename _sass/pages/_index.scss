@@ -1,0 +1,36 @@
+main#index {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  // background: linear-gradient(to top, #2b195e, #3a2d5d);
+  // background: linear-gradient(to top, #2b1c54, #24164c);
+  // background: linear-gradient(to top, #1c4c54, #24164c);
+  // background: linear-gradient(to top, #1c4c54, #16294c);
+  // background: linear-gradient(to top, #264459, #1a3566);
+  background: linear-gradient(to top, #263f59, #1a3566);
+
+  @media (min-width: 40rem) {
+    section.masthead {
+      margin: auto;
+      width: 34rem;
+      margin-left: 10vw;
+    }
+  }
+
+  @media (max-width: 40rem) {
+    section.masthead {
+      margin: auto;
+      padding: 2rem;
+    }
+  }
+
+  section.masthead {
+    color: #fefefe !important;
+    text-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    h2, p, a {
+      color: inherit;
+    }
+  }
+
+}

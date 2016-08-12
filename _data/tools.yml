@@ -1,0 +1,26 @@
+platforms:
+  android: Android
+  web: Web
+  desktop: Desktop
+
+languages:
+  c: C
+  cpp: C++
+  css: CSS
+  html: HTML
+  java: Java
+  js: JavaScript
+  ruby: Ruby
+  python: Python
+  node: Node.js
+  sql: SQL
+
+software:
+  octave: Octave
+  mongo: MongoDB
+  psql: PostgreSQL
+  jni: JNI
+  rails: Ruby on Rails
+  django: Django
+  jekyll: Jekyll
+  ml: Machine Learning

@@ -1,0 +1,38 @@
+main.content {
+
+  div.builds {
+
+    article.project {
+      &:not(:last-child) {
+        padding: 0.5rem 0;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      div.heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto 0;
+
+        a {
+          width: calc(100% - 2rem);
+        }
+
+        @import 'social';
+      }
+
+      p.description {
+        margin: 0;
+      }
+
+      div.image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+
+}

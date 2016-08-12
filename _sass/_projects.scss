@@ -1,0 +1,25 @@
+main.content {
+
+  section.project-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h1 {
+      width: calc(100% - 2rem);
+      &:after {
+        width: calc(100% + 2rem);
+      }
+    }
+
+    @import 'social';
+
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+}

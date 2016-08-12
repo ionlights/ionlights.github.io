@@ -1,0 +1,11 @@
+footer {
+  position: absolute;
+  height: 3rem;
+  bottom: 1rem;
+
+  p {
+    margin: 0;
+    font-size: $small-font-size;
+    line-height: 1.25rem;
+  }
+}

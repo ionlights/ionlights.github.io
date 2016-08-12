@@ -1,0 +1,40 @@
+.button {
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+  line-height: 1.5rem;
+  font-size: $small-font-size;
+  border-radius: 0.25rem;
+  display: inline-block;
+
+  &.planned {
+    background: #949494;
+    //&:after {
+    //  content: 'Planned';
+    //}
+  }
+  &.in-progress {
+    background: #ffc200;
+    border-color: #e8b100 !important;
+    //&:after {
+    //  content: 'In Progress';
+    //}
+  }
+  &.completed {
+    background: #09d209;
+    //&:after {
+    //  content: 'Completed';
+    //}
+  }
+  &.not-maintaining {
+    background: #8bbc40;
+    //&:after {
+    //  content: 'No Longer Maintaining';
+    //}
+  }
+  &.maintaining {
+    background: #00cbff;
+    //&:after {
+    //  content: 'Still Maintaining';
+    //}
+  }
+}
