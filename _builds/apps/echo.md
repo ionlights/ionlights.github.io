@@ -1,14 +1,24 @@
 ---
-thumb: ""
+title: Echo
+thumb: ''
 status: 1
-short_description: >
+short_description: |
   Echo is a web app for storing quotes, song lyrics, and other one-liners that you want to keep track of.
-platform: [web, desktop]
-languages: [node, js, html, css, sql]
-software: [mongo, ml]
+platform:
+- web
+- desktop
+languages:
+- node
+- js
+- html
+- css
+- sql
+software:
+- mongo
+- ml
 github: ionlights/echo
-start: 2016-07-01
-finish: 2016-10-01
+start: 2016-07-01 00:00:00 Z
+finish: 2016-10-01 00:00:00 Z
 pubd: false
 ---
 

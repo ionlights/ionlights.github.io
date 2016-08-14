@@ -1,9 +1,8 @@
 ---
-layout: page
 title: Profile
+permalink: "/about/"
+layout: page
 nav_listed: true
-permalink: /about/
-
 page_title: My Adventures
 ---
 

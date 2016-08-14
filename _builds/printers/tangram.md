@@ -1,9 +1,10 @@
 ---
-thumb: ""
+title: Tangram
+thumb: ''
 status: 1
-short_description: >
+short_description: |
   Tangram is a 3D printer designed with budget, speed, and resolution in mind.
-tools: ""
+tools: ''
 github: ionlights/tangram
 pubd: false
 ---

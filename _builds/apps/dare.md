@@ -1,14 +1,20 @@
 ---
+title: Dare
 page_title: Sampler, an Android App for DSP
 name: Sampler
-thumb: ""
+thumb: ''
 status: 1
-short_description: >
+short_description: |
   Sampler is a digital signal processor built for the mobile world.
-platform: [android]
-languages: [java, c, cpp]
-software: [jni]
-github: "barl-ucf/sampler"
+platform:
+- android
+languages:
+- java
+- c
+- cpp
+software:
+- jni
+github: barl-ucf/sampler
 pubd: false
 ---
 
