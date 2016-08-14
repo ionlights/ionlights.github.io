@@ -344,11 +344,11 @@ div.page {
 
 @media (max-width: 40rem) {
   div.page {
-    position: relative;
+    width: 100vw;
+    box-shadow: 0;
     padding: 0.5rem;
     padding-bottom: 0;
-    width: 100vw;
-    box-shadow: 0; }
+    position: relative; }
     div.page main.content {
       width: 100vw;
       padding: 1rem 0.5rem 4rem 0.5rem;
