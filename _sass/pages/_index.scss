@@ -28,9 +28,15 @@ main#index {
 
   section.masthead {
     color: #fefefe !important;
-    text-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
     h2, p, a {
       color: inherit;
+    }
+    a {
+        transition: 292ms ease-in-out;
+        &:hover {
+            color: #00a9ff;
+        }
     }
   }
 
