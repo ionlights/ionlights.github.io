@@ -3,12 +3,13 @@ main#index {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  // background: linear-gradient(to top, #2b195e, #3a2d5d);
-  // background: linear-gradient(to top, #2b1c54, #24164c);
-  // background: linear-gradient(to top, #1c4c54, #24164c);
-  // background: linear-gradient(to top, #1c4c54, #16294c);
-  // background: linear-gradient(to top, #264459, #1a3566);
-  background: linear-gradient(to top, #263f59, #1a3566);
+//   background: linear-gradient(to top, #2b195e, #3a2d5d);
+//   background: linear-gradient(to top, #2b1c54, #24164c);
+//   background: linear-gradient(to top, #1c4c54, #24164c);
+//   background: linear-gradient(to top, #1c4c54, #16294c);
+//   background: linear-gradient(to top, #264459, #1a3566);
+//   background: linear-gradient(to top, #263f59, #1a3566);
+  background: linear-gradient(to top, #434d61, #5380c5);
 
   @media (min-width: 40rem) {
     section.masthead {
