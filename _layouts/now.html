@@ -1,0 +1,13 @@
+---
+layout: base
+explanatory_blurb: >-
+  This is my <a href="https://nownownow.com/about">/now</a> page. More detailed
+  inforation about things like <a href="/projects">projects</a> and
+  <a href="/outreach">outreach</a> are available on their respective pages.
+---
+
+{% include modules/header.html
+  name="now" %}
+
+{% assign post = site.categories.now.first %}
+{% assign content = post.content %}

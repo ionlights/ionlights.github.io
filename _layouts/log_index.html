@@ -1,0 +1,36 @@
+---
+layout: base
+---
+
+{% if page.sublog_idx %}
+  {% assign fullname = page.path | remove: ".md" | remove: "_pages_sublog/" %}
+  {% assign lookup = fullname | split: '/' | last %}
+  {% assign category = fullname | split: '/' | first %}
+  {% assign fullname = fullname | remove: category | remove_first: "/" %}
+{% else %}
+  {% assign split = page.path | split: "/" | last %}
+  {% assign lookup = split | split: "-" | last | replace: ".md", "" %}
+  {% assign category = lookup %}
+{% endif %}
+
+{% include utils/_collect-subcategories.html %}
+
+{% if page.sublog_idx %}
+  {% include modules/header.html fullname=fullname %}
+{% else %}
+  {% include modules/header.html %}
+{% endif %}
+
+<div class="row">
+
+  <div class="col-12 col-lg-4 mb-2">
+    {% include modules/logs/tags.html %}
+  </div>
+
+  <div class="col-12 col-lg-8">
+    {% for post in site.categories[lookup] %}
+      {% include modules/logs/entry.html %}
+    {% endfor %}
+  </div>
+
+</div>

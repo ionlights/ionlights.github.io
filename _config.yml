@@ -1,0 +1,54 @@
+## site title
+title: ionlights
+
+## site email
+email: web@ionlights.com
+
+## lolz description
+description: >-
+
+baseurl: ""
+url: "https://ionlights.com/"
+
+social:
+  gh: ionlights
+  tw: ionlights
+  li: ionlights
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jemoji
+
+collections:
+  pages_global:
+    output: true
+  pages_sublog:
+    output: true
+
+exclude:
+  - "docker-compose.yml"
+  - "ionlights.studio"
+  - "ionlights.sketch"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "log_entry"
+      permalink: "/:categories/:title/"
+  - scope:
+      path: "now"
+      type: "posts"
+    values:
+      layout: "now"
+      permalink: "/now/:year-:month-:day/"
+  - scope:
+      path: ""
+      type: "pages_sublog"
+    values:
+      layout: "log_index"
+      sublog_idx: true
+      permalink: "/:path/"

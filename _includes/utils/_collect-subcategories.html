@@ -1,0 +1,8 @@
+{% assign row_subcast = "" %}
+
+{% for post in site.categories[lookup] %}
+  {% assign tmp_subcat = post.categories[1] | append: "/" | append: post.categories[2] | append: "|" %}
+  {% assign raw_subcats = raw_subcats | append: tmp_subcat %}
+{% endfor %}
+
+{% assign raw_subcats = raw_subcats | split: "|" | sort %}

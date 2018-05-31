@@ -1,0 +1,54 @@
+{% assign permit_size   = 2 %}
+{% assign url_array     = page.url | split: "/" %}
+{% assign url_size      = url_array | size %}
+{% assign url_construct = "/" %}
+{% assign quant_offset = 1 %}
+{% assign quant_limits = url_size | minus: permit_size %}
+
+{% unless page.url == "/" or page.url contains "404.html" %}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb ionlights-breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="{{ url_construct }}">
+        <i class="fas fa-home"> </i>
+      </a>
+      <i class="fas fa-chevron-right fa-xs"> </i>
+    </li>
+
+    {% assign dropdown_items = "" %}
+    {% for loc in url_array offset: 1 limit: quant_limits %}
+      {% assign url_construct = url_construct | append: loc | append: "/" %}
+      {% unless forloop.last %}
+        {% capture dropdown_item %}<a class="dropdown-item" href="{{ url_construct }}"> {{ loc }} </a>{% endcapture %}
+        {% assign dropdown_items = dropdown_items | append: dropdown_item | append: "\" %}
+      {% endunless %}
+      {% assign penultimate = loc %}
+    {% endfor %}
+
+    {% if quant_limits >= 2 %}
+    <li class="breadcrumb-item">
+      <a class="dropdown" data-toggle="dropdown">
+        <i class="fas fa-ellipsis-v fa-xs"> </i>
+      </a>
+      <i class="fas fa-chevron-right fa-xs"> </i>
+
+      <div class="dropdown-menu">
+        {% assign dropdown_items = dropdown_items | split: "\" %}
+        {% for dropdown in dropdown_items %}
+          {{ dropdown }}
+        {% endfor %}
+      </div>
+    </li>
+    {% endif %}
+
+    {% unless quant_limits < 1 %}
+    <li class="breadcrumb-item">
+      <a href="{{ url_construct }}"> {{ penultimate }} </a>
+      <i class="fas fa-chevron-right fa-xs"> </i>
+    </li>
+    {% endunless %}
+
+    <li class="breadcrumb-item active" aria-current="page"> {{ url_array | last }} </li>
+  </ol>
+</nav>
+{% endunless %}

@@ -1,0 +1,35 @@
+{% include meta/head.html %}
+
+<body id="home">
+
+  {% include meta/nav.html %}
+
+  <main class="container-fluid py-5">
+    <div class="row px-lg-5 px-0 mx-0">
+      <div class="col-12 col-lg-7 px-lg-0 px-3 pr-lg-3 mb-lg-0 mb-3" id="std-text">
+        {{ content }}
+      </div>
+
+      <div class="col-12 col-lg-5 px-lg-0 px-3 pl-lg-3" id="updates">
+        {% assign post = site.categories.projects.first %}
+        {% assign category = post.categories[2] %}
+        {% unless post == nil %}
+          {% include modules/logs/entry-small.html id="latest-project-update" %}
+        {% endunless %}
+
+        {% assign post = site.categories.outreach.first %}
+        {% assign category = post.categories[2] %}
+        {% unless post == nil %}
+          {% include modules/logs/entry-small.html id="latest-outreach-update" %}
+        {% endunless %}
+
+        {% assign post = site.categories.now.first %}
+        {% assign category = "now" %}
+        {% unless post == nil %}
+          {% include modules/logs/entry-small.html id="latest-now-update" %}
+        {% endunless %}
+      </div>
+    </div>
+  </main>
+
+</body>

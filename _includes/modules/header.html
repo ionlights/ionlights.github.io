@@ -1,0 +1,17 @@
+{% capture header %}
+  {% if include.fullname %}
+    {{ include.fullname }}
+  {% else %}
+    {{ lookup }}
+  {% endif %}
+{% endcapture %}
+
+<div class="row mb-2">
+  <div class="col-12 col-lg-4"> </div>
+  <div class="col-12 col-lg-8">
+    <h1 class="px-3 log-heading rounded">
+      {{ header | strip | strip_newlines | downcase }}.log
+    </h1>
+    <p  class="px-3"> {{ page.explanatory_blurb }} </p>
+  </div>
+</div>

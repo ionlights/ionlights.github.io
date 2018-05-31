@@ -1,0 +1,22 @@
+body#home {
+  background: linear-gradient(#304757 $navbar-min-height, #0f2331);
+
+  main.container-fluid {
+    min-height: calc(100vh - #{$navbar-min-height});
+    display: flex;
+    justify-content: center;
+
+    .row {
+      justify-content: center;
+      p {
+        color: #fefefe;
+      }
+
+      div[class^="col-"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}

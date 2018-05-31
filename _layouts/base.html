@@ -1,0 +1,11 @@
+{% include meta/head.html %}
+
+<body id="{{ page.url | slugify }}">
+
+  {% include meta/nav.html %}
+
+  <main class="container py-5">
+    {{ content }}
+  </main>
+
+</body>

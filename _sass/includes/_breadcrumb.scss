@@ -1,0 +1,19 @@
+ .ionlights-breadcrumb {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  .breadcrumb-item {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+    }
+
+    &:before {
+      content: "";
+      padding: 0;
+    }
+  }
+}

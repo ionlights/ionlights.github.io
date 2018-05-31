@@ -1,0 +1,41 @@
+{% assign folder_struct = "" %}
+{% for page in site.pages_global %}
+  {% assign split = page.path | split: "/" %}
+  {% assign split = split[1] %}
+  {% assign check = split | split: "-" | first | times: 1 %}
+  {% if check <= 0 %} {% continue %} {% endif %}
+
+  {% unless folder_struct contains split %}
+    {% assign folder_struct = folder_struct | append: split | append: " " %}
+  {% endunless %}
+{% endfor %}
+
+{% assign folder_struct = folder_struct | rstrip | split: " " %}
+
+{% for folder in folder_struct %}
+  {% assign check = folder | split: "-" | first | times: 1 %}
+  {% assign named = folder | split: "-" | last %}
+
+  {% capture dropdown_id %}dropdown_menu-{{ named }}{% endcapture %}
+  <div class="btn-group">
+
+    <a class="btn btn-secondary" href="/{{ named }}/"> {{ named }} </a>
+    <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="sr-only">toggle dropdown </span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right">
+
+      {% for page in site.pages_global %}
+        {% assign split = page.path | split: "/" | last %}
+        {% assign check = split | split: "-" | first | times: 1 %}
+
+        {% unless check > 0 and page.path contains folder %}
+          {% continue %}
+        {% endunless %}
+
+        <a class="dropdown-item" href="{{ page.permalink }}"> {{ page.title }} </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}

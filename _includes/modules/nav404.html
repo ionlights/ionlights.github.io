@@ -1,0 +1,21 @@
+{% capture base_tag_cls %}
+list-group-item|
+list-group-item-action|
+d-flex|
+justify-content-between|
+align-items-center|
+{% endcapture %}
+
+{% assign base_tag_cls = base_tag_cls | strip_newlines | split: "|" | join: " " %}
+
+<div class="card mb-3">
+  <div class="card-header"> Abridged sitemap </div>
+  <div class="list-group list-group-flush">
+    {% for nav in nav_global %}
+      <a  href="/{{ nav }}/"
+          class="{{ base_tag_cls }}">
+        {{ nav }}
+      </a>
+    {% endfor %}
+  </div>
+</div>

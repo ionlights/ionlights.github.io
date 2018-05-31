@@ -1,0 +1,24 @@
+{% capture base_tag_cls %}
+btn|
+btn-sm|
+btn-log-tags|
+btn-{{ category }}|
+{% endcapture %}
+
+{% assign base_tag_cls = base_tag_cls | strip_newlines | split: "|" | join: " " %}
+
+<div class="log-entry card mb-3" id="{{ include.id }}">
+  <div class="log-excerpt card-body">
+    <a href="{{ post.url }}"> <h3 class="log-title"> {{ post.title }} </h3> </a>
+    <h5 class="log-snark"> or... {{ post.snark | downcase }} </h5>
+    {{ post.excerpt }}
+  </div>
+  <div class="card-footer">
+    <a class="{{ base_tag_cls}}-primary" href="/{{ post.categories | join: '/'}}"> {{ post.categories | last }} </a>
+    {% comment %}
+    {% for tag in post.tags %}
+      <div class="{{ base_tag_cls }}"> {{ tag }} </div>
+    {% endfor %}
+    {% endcomment %}
+  </div>
+</div>

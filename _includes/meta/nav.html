@@ -1,0 +1,33 @@
+<header class="navbar ionlights-navbar navbar-expand-md">
+	<a class="navbar-brand ionlights-brand" href="{{ site.baseurl | prepend: site.url }}"></a>
+
+	<div class="navbar-toggler" data-toggle="collapse" data-target="#navbarGlobal" aria-controls="navbarGlobal" aria-expanded="false" aria-label="Toggle navigation">
+		<span id="menu-text">
+      menu
+      <!-- <i id="menu-icon" class="fas fa-bars fa-md"> </i> -->
+    </span>
+	</div>
+
+	<div class="collapse navbar-collapse" id="navbarGlobal">
+		<div class="navbar-nav ml-auto ionlights-nav">
+			{% for navi in site.pages_global %}
+        {% assign split = navi.path | split: "/" | last %}
+        {% assign check = split | split: "-" | first | times: 1 %}
+
+        {% capture active %}
+          {% if page.url contains navi.permalink %}
+            active
+          {% endif %}
+        {% endcapture %}
+
+				{% if check > 0 %}
+  				<a class="nav-item nav-link {{ active | strip }}" href="{{ navi.permalink }}">
+  					{{ navi.title }}
+  				</a>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+</header>
+
+{% include meta/breadcrumb.html %}

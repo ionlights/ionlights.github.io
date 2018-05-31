@@ -1,0 +1,46 @@
+$font-sans: "motiva-sans", sans-serif;
+// $font-sans: "proxima-nova", sans-serif;
+// $font-sans: "brandon-grotesque", sans-serif;
+$font-code: "anonymous-pro", monospace;
+
+h1, h2, h3, h4, h5, h6, p, span, strong, em, li {
+  font-family: $font-sans;
+}
+
+pre, code {
+  &, & > span {
+    font-family: $font-code;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.5;
+  &:not(.log-heading) {
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(9, 57, 99, 0.4);
+  }
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+p, span, a, {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+span.badge {
+	font-weight: 500;
+}
+
+div[class*="highlight"] {
+  font-family: $font-code;
+}

@@ -1,0 +1,95 @@
+h1.log-heading {
+  font-family: $font-code;
+  background: #d6dde0;
+  font-weight: bold;
+  color: #6b7275;
+}
+
+div.log-entry.card {
+  div.log-header.card-header {
+    // display: flex;
+    // flex-direction: row;
+    background: #d7dde0;
+  }
+  div.log-excerpt {
+    h3.log-title {
+      font-family: $font-sans;
+      font-weight: 700;
+      // color: #3e4c52;
+      color: #0d3140;
+    }
+    h5.log-snark {
+      font-family: $font-sans;
+      font-weight: 500;
+      color: #667a82;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+
+.btn.btn-log-tags {
+  font-family: $font-sans;
+  font-weight: 400;
+}
+
+.btn.btn-log-tags[class$="-primary"] {
+  font-weight: 500;
+}
+
+.btn.btn-builds {
+  background: #9ed8f1;
+  color: #0b181d;
+
+  &-primary {
+    // background: #0070d8;
+    background: #009fe2;
+    color: #000000;
+  }
+}
+
+.btn.btn-feynman {
+  // background: #7e9ff3;s
+  background: #a895ec;
+  color: #120050;
+
+  &-primary {
+    background: #4a16ff;
+    color: #faf9ff;
+  }
+}
+
+.btn.btn-outreach {
+  // background: #7e9ff3;
+  background: #a895ec;
+  color: #120050;
+
+  &-primary {
+    background: #4a16ff;
+    color: #faf9ff;
+  }
+}
+
+.btn.btn-research {
+  // background: #7e9ff3;
+  background: #a895ec;
+  color: #120050;
+
+  &-primary {
+    background: #4a16ff;
+    color: #faf9ff;
+  }
+}
+
+.btn.btn-thoughts {
+  // background: #7e9ff3;
+  background: #a895ec;
+  color: #120050;
+
+  &-primary {
+    background: #4a16ff;
+    color: #faf9ff;
+  }
+}

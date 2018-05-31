@@ -1,0 +1,37 @@
+---
+layout: base
+---
+
+{% include modules/header.html
+  fullname="contact" %}
+
+<div class="row">
+  <div class="col-12 col-md-4 mb-5">
+    <div class="card">
+      <div class="card-header">
+        On the Interwebs
+      </div>
+      <div class="card-body">
+        <a class="btn btn-md btn-secondary btn-github"
+          href="https://github.com/ionlights">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="btn btn-md btn-secondary btn-keybase"
+          href="https://keybase.io/ionlights">
+          <i class="fab fa-keybase"></i>
+        </a>
+        <a class="btn btn-md btn-secondary btn-linkedin"
+          href="https://linkedin.com/in/ionlights">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="btn btn-md btn-secondary btn-email"
+          href="mailto:john@ionlights.com?subject=%5Bionlights.com%5D%20apt-subject-here&body=your-message-here">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-8">
+    {{ content }}
+  </div>
+</div>
