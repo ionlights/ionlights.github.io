@@ -1,0 +1,23 @@
+main#home {
+
+  div#home-intro {
+    max-width: 60%;
+    h1#home-intro-call {
+      font-size: 5 * $base-unit;
+      color: $brand-wht-txt;
+      font-weight: bold;
+      line-height: 1.5;
+      display: block;
+      width: 100%;
+    }
+
+    h2#home-intro-desc {
+      font-size: 3.5 * $base-unit;
+      color: $brand-gry-txt;
+      font-weight: bold;
+      line-height: 1.5;
+      display: block;
+      width: 100%;
+    }
+  }
+}

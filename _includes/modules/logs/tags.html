@@ -8,23 +8,30 @@ align-items-center|
 
 {% assign base_tag_cls = base_tag_cls | strip_newlines | split: "|" | join: " " %}
 
-<div class="card mb-3">
-  <div class="card-header"> Filter {{ category }} by topic </div>
-  <div class="list-group list-group-flush">
-    {% for subcat in raw_subcats %}
-      {% assign split = subcat | split: "/" | last %}
+<button class="btn btn-block btn-primary mb-2" type="button" 
+        data-toggle="collapse" data-target="#filter-{{ category }}"
+        aria-expanded="false" aria-controls="#filter-{{ category }}">
+  Filter {{ category }} by topic
+</button>
 
-      {% assign tag_cls = base_tag_cls %}
+<div class="card mb-3 collapse" id="filter-{{ category }}">
+  <div class="card-body p-0">
+    <div class="list-group list-group-flush">
+      {% for subcat in raw_subcats %}
+        {% assign split = subcat | split: "/" | last %}
 
-      {% if page.url contains subcat %}
-        {% assign tag_cls = tag_cls | append: " active" %}
-      {% endif %}
+        {% assign tag_cls = base_tag_cls %}
 
-      <a  href="{{ page.url }}{% if page.sublog_idx %}{{ split }}{% else %}{{ subcat }}{% endif %}"
-          class="{{ tag_cls }}">
-        {{ subcat }}
-        <span class="badge badge-secondary"> {{ site.categories[split] | size }} </span>
-      </a>
-    {% endfor %}
+        {% if page.url contains subcat %}
+          {% assign tag_cls = tag_cls | append: " active" %}
+        {% endif %}
+
+        <a  href="{{ page.url }}{% if page.sublog_idx %}{{ split }}{% else %}{{ subcat }}{% endif %}"
+            class="{{ tag_cls }}">
+          {{ subcat }}
+          <span class="badge badge-secondary"> {{ site.categories[split] | size }} </span>
+        </a>
+      {% endfor %}
+    </div>
   </div>
 </div>

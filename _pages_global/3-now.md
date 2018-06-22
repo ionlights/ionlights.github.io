@@ -3,37 +3,29 @@ layout: base
 title: now
 permalink: /now/
 explanatory_blurb: >-
-  This is my <a href="https://nownownow.com/about">/now</a> page. I try to
-  update this about once a month, but we'll see how well that works out. :joy:
+  Note: More detailed information about <a href="/projects/">projects</a>, <a href="/outreach/">outreach</a>, and the like are available on their respective pages. I'll to update this about once a month, but we'll see how well that works out. :joy:
 ---
 
+{% assign category = "now" %}
 {% assign post = site.categories.now.first %}
-{% assign content = post.content %}
 
-{% include modules/header.html
-  fullname="now"
-  blurb=page.explanatory_blurb %}
-
-<div class="row">
-  <div class="col-12 col-lg-4 mb-3">
-    <div class="card">
-      <div class="card-header">
-        The WABAC Machine
-      </div>
-      <div class="list-group list-group-flush">
-        {% assign ohnows = site.categories["now"] | limit: 10 %}
-        {% for now in ohnows %}
-          <a href="{{ now.url }}"
-             class="list-group-item d-flex justify-content-between align-items-center{% if now.date == post.date %} active{% endif %}">
-            As of {{ now.date | date: "%d %B, %Y" }}
-          </a>
-        {% endfor %}
-      </div>
-    </div>
+<div class="container pt-5">
+  <div class="jumbotron py-md-5">
+    <h1 class="mb-0 log-heading rounded-top"> Now (this a <a href="https://nownownow.com/about/">/now</a> page)</h1>
+    <h2 class="mb-0 log-heading rounded-bottom"> or... what's changed in the last while.</h2>
+    <hr>
+    <div class="btn btn-primary"> {{ post.date | date: "%b %d, %Y" }} </div>
   </div>
-  <div class="col-12 col-lg-8">
-    <h1>What I'm doing now </h1>
-    <div class="alert alert-warning">Note: More detailed information about <a href="/projects/">projects</a>, <a href="/outreach/">outreach</a>, and the like are available on their respective pages.</div>
-    {{ content }}
+</div>
+
+<div class="container pb-5">
+  <div class="row">
+    <div class="col-12 col-lg-8">
+      <div class="alert alert-warning"> {{ page.explanatory_blurb }} </div>
+      {{ post.content }}
+    </div>
+    <div class="col-12 col-lg-4">
+      {% include modules/logs/related.html %}
+    </div>
   </div>
 </div>

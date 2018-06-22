@@ -4,10 +4,13 @@ title: contact
 permalink: /contact/
 ---
 
-# Contact Policy
-I'm always happy to talk to [strangers][making-friends]; however, please consider my inbox before reaching out.
+I'm always happy to talk to [you][making-friends]; however, please consider my inbox before reaching out.
+
+<br>
 
 I **_will not reply_** if you're sending me (1) **recruiting emails** or (2) **requesting debug help**. (For debugging, _google-fu_ will serve you well.)
+
+<br>
 
 If you're still reading this, dope. I'm ready and willing to reply to...
 - questions/issues/ideas about my papers, blog posts, projects (code+like), and
@@ -21,6 +24,10 @@ If you're still reading this, dope. I'm ready and willing to reply to...
   - digitial signal processing (dsp)
   - electroencephalography (eegs)
 
+<br>
+
 **NOTE:** For your email to reach me, it must have `[ionlights.com]` in the subject line, at the beginning. If it doesn't, it's almost guaranteed I won't see it.
+
+
 
 [making-friends]: https://archive.li/1mTK6/image

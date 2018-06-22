@@ -1,21 +1,48 @@
 body#home {
   background: linear-gradient(#304757 $navbar-min-height, #0f2331);
 
-  main.container-fluid {
+  main.container {
     min-height: calc(100vh - #{$navbar-min-height});
     display: flex;
     justify-content: center;
 
     .row {
       justify-content: center;
-      p {
+      #std-text > p {
         color: #fefefe;
+        font-size: 1.5em;
       }
 
       div[class^="col-"] {
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+
+      div#updates {
+        div.log-entry.card {
+          // background: transparent;
+          background: #304757;
+          div.log-header.card-header {
+            background: #d7dde0;
+          }
+          div.log-excerpt {
+            h3.log-title {
+              font-family: $font-sans;
+              font-weight: 700;
+              // color: #3e4c52;
+              color: #42c6ff;
+            }
+            h5.log-snark {
+              font-family: $font-sans;
+              font-weight: 500;
+              color: #667a82;
+            }
+            p {
+              margin: 0;
+            }
+          }
+        }
       }
     }
   }

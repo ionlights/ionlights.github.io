@@ -1,0 +1,97 @@
+.btn-log-tags {
+    background: #fefefe;
+
+    a {
+        &:after {
+            height: 0;
+        }
+    }
+}
+
+.btn-sigai-primary {
+    color: #174a2f;
+    background: #41ff9a;
+}
+
+.btn-forage-primary {
+    color: #fefefe;
+    background: #fefefe;
+}
+
+.btn-now-primary {
+    color: #fefefe;
+    background: #fefefe;
+}
+
+.list-tags {
+    padding: 0.75rem 0.1.25rem !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.btn.btn-log-tags {
+    font-family: $font-sans;
+    font-weight: 400;
+  }
+  
+  .btn.btn-log-tags[class$="-primary"] {
+    font-weight: 500;
+  }
+  
+  .btn.btn-builds {
+    background: #9ed8f1;
+    color: #0b181d;
+  
+    &-primary {
+      // background: #0070d8;
+      background: #009fe2;
+      color: #000000;
+    }
+  }
+  
+  .btn.btn-feynman {
+    // background: #7e9ff3;s
+    background: #a895ec;
+    color: #120050;
+  
+    &-primary {
+      background: #4a16ff;
+      color: #faf9ff;
+    }
+  }
+  
+  .btn.btn-outreach {
+    // background: #7e9ff3;
+    background: #a895ec;
+    color: #120050;
+  
+    &-primary {
+      background: #4a16ff;
+      color: #faf9ff;
+    }
+  }
+  
+  .btn.btn-research {
+    // background: #7e9ff3;
+    background: #a895ec;
+    color: #120050;
+  
+    &-primary {
+      background: #4a16ff;
+      color: #faf9ff;
+    }
+  }
+  
+  .btn.btn-thoughts {
+    // background: #7e9ff3;
+    background: #a895ec;
+    color: #120050;
+  
+    &-primary {
+      background: #4a16ff;
+      color: #faf9ff;
+    }
+  }

@@ -5,6 +5,7 @@ $font-code: "anonymous-pro", monospace;
 
 h1, h2, h3, h4, h5, h6, p, span, strong, em, li {
   font-family: $font-sans;
+  margin: 0;
 }
 
 pre, code {
@@ -43,4 +44,44 @@ span.badge {
 
 div[class*="highlight"] {
   font-family: $font-code;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  a {
+    display: block;
+  }
+}
+
+p, span, h1, h2, h3, h4, h5, h6, li {
+  a {
+    padding: 0 0.2rem;
+    color: inherit;
+    position: relative;
+    z-index: 10;
+    font-size: inherit;
+    display: inline-block;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      // background: #42c6ff;
+      // background: #5000ff;
+      // background: #914ae6;
+      background: #7f58ff;
+      z-index: -1;
+      transition: height 125ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    &:hover {
+      color: #fefefe;
+      text-decoration: none;
+      &:after {
+        height: 100%;
+      }
+    }
+}
 }

@@ -1,0 +1,17 @@
+<div id="menu">
+    <div id="menu-heading">
+        <p>menu</p>
+        <div id="menu-toggle-close">
+            {% include menu-toggle-close.html %}
+        </div>
+    </div>
+    <ul id="menu-links">
+        {% for li in site.data.nav %}
+        <li class="menu-link">
+            <a href="{{ li.url }}">
+                {{ li.name }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

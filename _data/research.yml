@@ -1,0 +1,29 @@
+- incl:   y
+  place:  FIT
+  lab:    BioComplex
+  funds:  AMALTHEA REU
+  time:   [2017-05-01, 2017-07-31]
+  advise: Dr. Ronaldo Menezes & Diego Silva
+  desc:   >
+    Across the United States over 20 people die, every day, from a solvable problem. We lack organ donations, and the system is stacked against certain socioeconomic factors. Over this summer, we worked to begin pinpointing some of the socioeconomic biases that are prevalent in the allocation process.
+  papers:
+
+- incl:   y
+  place:  IST
+  lab:    NeuroLogic
+  funds:  NSF
+  time:   [2017-07-01, Present]
+  advise: Dr. Alan Paris
+  desc:   >
+    Most believe that the human brain can't perceive more than 30Hz, but previous work by Dr. Paris suggests otherwise; currently we're investigating whether this is actually true. So far it seems like it's not.
+  papers:
+
+- incl:   y
+  place:  IST
+  lab:    SREAL
+  funds:  NSF
+  time:   [2017-07-01, Present]
+  advise: Dr. Charles Hughes
+  desc:   >
+    Within virtual environments, it's extremely important for users to understand that the avatar they control is actually their own body, in that their actions are what the character will execute. To better communicate this, though, it's extremely important for the user to have feedback; this is the work that I've been working on in SREAL.
+  papers:

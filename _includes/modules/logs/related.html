@@ -1,0 +1,17 @@
+<h3>More {{ category }}.logs </h3>
+
+{% assign rel_cnt = 0 %}
+
+{% for rel in site.categories[category] %}
+  {% unless page.permalink == rel.permalink or site.categories.now.first %}
+    {% assign rel_cnt = rel_cnt | plus: 1 %}
+    {% assign post = rel %}
+    {% include modules/logs/entry-small.html %}
+  {% endunless %}
+{% endfor %}
+
+{% if rel_cnt == 0 %}
+<p> Looks like I just started! Check back in a few weeks for more logs! 
+  :smiley: 
+</p>
+{% endif %}
