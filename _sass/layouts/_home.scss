@@ -20,27 +20,24 @@ body#home {
       }
 
       div#updates {
-        div.log-entry.card {
+        article.log-entry {
           // background: transparent;
-          background: #304757;
-          div.log-header.card-header {
+          // background: #304757;
+          div.log-header {
             background: #d7dde0;
           }
-          div.log-excerpt {
-            h3.log-title {
-              font-family: $font-sans;
-              font-weight: 700;
-              // color: #3e4c52;
-              color: #42c6ff;
-            }
-            h5.log-snark {
-              font-family: $font-sans;
-              font-weight: 500;
-              color: #667a82;
-            }
-            p {
-              margin: 0;
-            }
+          h2.log-title {
+            color: #a6cad8;
+            // font-family: $font-sans;
+            // font-weight: 700;
+            // color: #3e4c52;
+            // color: #42c6ff;
+          }
+          h5.log-snark {
+            padding: 1rem 0;
+            font-family: $font-sans;
+            font-weight: 400;
+            color: #667a82;
           }
         }
       }

@@ -1,0 +1,62 @@
+---
+layout: base
+---
+
+{% if page.sublog_idx %}
+  {% assign fullname = page.path | remove: ".md" | remove: "_pages_sublog/" %}
+  {% assign lookup = fullname | split: '/' | last %}
+  {% assign category = fullname | split: '/' | first %}
+  {% assign fullname = fullname | remove: category | remove_first: "/" %}
+{% else %}
+  {% assign split = page.path | split: "/" | last %}
+  {% assign lookup = split | split: "-" | last | replace: ".md", "" %}
+  {% assign category = lookup %}
+{% endif %}
+
+{% include utils/_collect-subcategories.html %}
+
+<main class="container py-5">
+  <div class="row">
+
+    <div class="col-12 mb-2">
+      <h1 class="log-header">
+        >>> {{ lookup }}.log
+      </h1>
+      {% include modules/logs/tags.html %}
+    </div>
+
+  </div>
+  {% for proj in site.pages_sublog %}
+    {% unless proj.desc == nil %}
+      {% assign name = proj.path | remove: ".md" | remove: "_pages_sublog" | split: "/" | last %}
+      <div class="log-project my-2 row">
+        <div class="log-meta col-12 col-lg-4">
+          {% assign st = site.categories[name] | last %}
+          {% assign ed = site.categories[name] | first %}
+          {% assign styr = st.date | date: "%Y" %}
+          {% assign edyr = ed.date | date: "%Y" %}
+          <div class="log-timeframe">
+            {% assign lookup = st.date | date: "%b" %}
+            {% assign season = site.data.seasons[lookup] %}
+            <span class="log-timeframe-start">
+              {{ season }} {% unless styr == edyr %}{{ styr }}{% endunless %}
+            </span>
+            {% assign lookup = ed.date | date: "%b" %}
+            {% if season == site.data.seasons[lookup] %}
+              {% assign season = "" %}
+            {% else %}
+              {% assign season = site.data.seasons[lookup] %}
+            {% endif %}
+            <span class="log-timeframe-end">
+              {{ season }} {{ edyr }}
+            </span>
+          </div>
+        </div>
+        <div class="log-body col-12 col-lg-8">
+          <h1 class="log-heading">{% if proj.name %}{{ proj.name }}{% else %}{{ name | capitalize }}{% endif %}</h1>
+          <p class="log-summary"> {{ proj.desc }} </p>
+        </div>
+      </div>
+    {% endunless %}
+  {% endfor %}
+</main>

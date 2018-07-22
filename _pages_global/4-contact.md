@@ -26,8 +26,9 @@ If you're still reading this, dope. I'm ready and willing to reply to...
 
 <br>
 
-**NOTE:** For your email to reach me, it must have `[ionlights.com]` in the subject line, at the beginning. If it doesn't, it's almost guaranteed I won't see it.
+**NOTE:** For your email to reach me, it must be sent to [j+web@ionlights.com][webmail]. Otherwise, I can guarantee I won't see it.
 
 
 
 [making-friends]: https://archive.li/1mTK6/image
+[webmail]: mailto:j+web@ionlights.com
