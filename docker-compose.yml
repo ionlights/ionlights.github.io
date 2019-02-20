@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  hugo:
+    image: jojomi/hugo:0.53
+    environment:
+      - HUGO_WATCH=true
+      # - HUGO_BASEURL=ionlights.com
+      # - HUGO_THEME=something
+    container_name: "dev-hugo-ionlights-com"
+    volumes:
+      - .:/src
+    ports:
+      - 46669:1313
