@@ -1,0 +1,12 @@
+# Font style metadata
+name = "ProximaNova"
+
+# Font families
+heading_font = "Proxima Nova"
+body_font = "Proxima Nova"
+nav_font = "Proxima Nova"
+mono_font = "Fira Mono"
+
+# Font size
+font_size = "20"
+font_size_small = "16"
