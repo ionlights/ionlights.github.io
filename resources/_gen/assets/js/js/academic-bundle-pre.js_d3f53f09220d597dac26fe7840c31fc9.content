@@ -45,7 +45,7 @@ if(typeof Fuse==='function'){$.getJSON(search_index_filename,function(search_ind
 $('#search-query').keyup(function(e){clearTimeout($.data(this,'searchTimer'));if(e.keyCode==13){initSearch(true,fuse);}else{$(this).data('searchTimer',setTimeout(function(){initSearch(false,fuse);},250));}});});}
 const abouts=document.getElementById("about");const navbar=document.getElementById("navbar-main");const initial_body_margin_top=parseInt(document.body.style.marginTop);const initial_abouts_padding_top=parseInt(abouts.style.paddingTop);const targetOffset=0.25*window.innerHeight;const navbarColor=window.getComputedStyle(navbar,null).getPropertyValue("background-color").replace("rgb(","rgba(");$(function(){for(let a of document.getElementsByTagName("a")){if(a.href.includes("/now/latest")){for(let v of document.getElementsByTagName("a")){if(v.innerHTML.includes("Now, as of"))
 a.href=v.href;}}}
-setStyles();setResizeStyles();setEventListeners();});function setStyles(){document.body.style.boxSizing="border-box!important";document.body.style.marginTop=0;abouts.childNodes[1].style.display="flex";abouts.childNodes[1].style.margin="auto";abouts.style.display="flex";}
+setStyles();setResizeStyles();setEventListeners();});function setStyles(){}
 function setResizeStyles(){let pad=navbar.offsetHeight+initial_abouts_padding_top;console.log(`${pad}px!important`);abouts.style.paddingTop=`${pad}px`;}
 function fadeHomeNav(){let percent;if(window.scrollY>=targetOffset){percent=1;}else if(window.scrollY<navbar.offsetHeight){percent=0;}else{percent=window.scrollY/targetOffset;}
 let color=navbarColor.replace(")",`, ${percent})`);navbar.style.cssText=`background-color: ${color}!important`;}

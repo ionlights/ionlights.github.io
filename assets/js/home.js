@@ -28,12 +28,12 @@ $(function() {
 });
 
 function setStyles() {
-  document.body.style.boxSizing = "border-box!important";
-  document.body.style.marginTop = 0;
-
-  abouts.childNodes[1].style.display = "flex";
-  abouts.childNodes[1].style.margin = "auto";
-  abouts.style.display = "flex";
+  // document.body.style.boxSizing = "border-box!important";
+  // document.body.style.marginTop = 0;
+  //
+  // abouts.childNodes[1].style.display = "flex";
+  // abouts.childNodes[1].style.margin = "auto";
+  // abouts.style.display = "flex";
   // abouts.style.minHeight = "80vh";
 }
 
