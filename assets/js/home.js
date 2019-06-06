@@ -21,20 +21,20 @@ $(function() {
   }
   // endregion
 
-  setStyles();
-  setResizeStyles();
+  // setStyles();
+  // setResizeStyles();
   // fadeHomeNav();
   setEventListeners();
 });
 
 function setStyles() {
-  // document.body.style.boxSizing = "border-box!important";
-  // document.body.style.marginTop = 0;
-  //
-  // abouts.childNodes[1].style.display = "flex";
-  // abouts.childNodes[1].style.margin = "auto";
-  // abouts.style.display = "flex";
-  // abouts.style.minHeight = "80vh";
+  document.body.style.boxSizing = "border-box!important";
+  document.body.style.marginTop = 0;
+
+  abouts.childNodes[1].style.display = "flex";
+  abouts.childNodes[1].style.margin = "auto";
+  abouts.style.display = "flex";
+  abouts.style.minHeight = "80vh";
 }
 
 function setResizeStyles() {
