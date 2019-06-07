@@ -71,9 +71,11 @@ common sense reasoning, and psycholinguistics. For more recent info, check out
 [now](/now/latest/). 
 
 Previously, I've worked in Natural Language Processing, Computer Vision, Virtual
-Reality, Brain Computer Interfaces, and Digital Signal Processing. These are in
-order of recency, so I'm most familiar with NLP and CV. Point being, I'm always
-down to chat with people interested in getting into research, especially these
-fields, so feel free to [shoot me an email through my contact form][contact]. 
+Reality, Brain Computer Interfaces, and Digital Signal Processing. However, I'm
+most familiar with NLP and CV, as they're my most recent fields. 
+
+It's worth noting, though, I'm always down to chat with people interested in
+getting into research, especially the above fields, so feel free to [shoot me an
+email through mycontact form][contact]. 
 
 [contact]: /#contact
