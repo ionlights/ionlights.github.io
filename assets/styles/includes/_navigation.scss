@@ -1,0 +1,101 @@
+$hover-color: rgba(194, 211, 228, 0.17);
+$hover-bg-transition: 124ms ease-in-out;
+
+$navbar-pad-tb: 0;
+$navbar-pad-lr: 1rem;
+
+$navbar-min-height: 4rem;
+
+.ionlights-navbar {
+  min-height: $navbar-min-height;
+  line-height: $navbar-min-height;
+  // margin: 0;
+  padding: 0;
+  // background-color: #304758ff;
+
+  a, span {
+    color: #34363a;
+    font-family: Avenir Next, San Francisco, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    // color: #b7e1ff;
+  }
+}
+
+.ionlights-navbar .ionlights-brand {
+  padding: 0 $navbar-pad-lr;
+  line-height: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.navbar-toggler {
+  $navbar-toggler-height: 2.5rem;
+  height: $navbar-toggler-height;
+  $navbar-toggler-padding: .75rem;
+  padding: 0 $navbar-toggler-padding;
+  margin: 0 $navbar-pad-lr;
+  transition: $hover-bg-transition;
+
+  span#menu-text {
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: $navbar-toggler-height;
+    $navbar-toggler-menu-fs: $navbar-toggler-height / 2.5;
+    font-size: $navbar-toggler-menu-fs;
+
+    &:after {
+      content: "\f0c9";
+      font-weight: 600;
+      padding-left: $navbar-toggler-padding / 2;
+      font-family: Font Awesome\ 5 Free;
+      font-size: $navbar-toggler-menu-fs / 1.0582010582;
+    }
+
+  }
+
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+.ionlights-navbar .ionlights-nav {
+  min-height: $navbar-min-height;
+
+  .nav-item.nav-link {
+    $nav-link-pad-tb: .5rem;
+    $nav-link-pad-lr: $navbar-pad-lr;
+
+    transition: $hover-bg-transition;
+    padding: $nav-link-pad-tb $nav-link-pad-lr;
+    line-height: $navbar-min-height - 2 * $nav-link-pad-tb;
+
+    &:hover, &.active {
+      background: $hover-color;
+    }
+
+    &.active {
+      font-weight: 500;
+    }
+  }
+}
+
+.ionlights-nav {
+  $nav-dropdown-btn-height: 2.5rem;
+  .btn-group, .dropdown {
+    margin: ($navbar-min-height - $nav-dropdown-btn-height) / 2 $navbar-pad-lr;
+    .btn {
+      height: $nav-dropdown-btn-height;
+    }
+
+    .dropdown-menu {
+
+    }
+  }
+}
+
+body#home {
+  .ionlights-navbar {
+    a, span {
+      color: #b7e1ff;
+    }
+  }
+}

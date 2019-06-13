@@ -1,0 +1,12 @@
+{{ $section := .Get "section" }}
+
+{{ range last 1 (where .Site.RegularPages.ByTitle "Section" $section )}}
+    <article class="log-entry mb-3" id="latest-{{ $section }}-update">
+        <h2 class="log-title">
+          <a href="{{ .RelPermalink }}"> {{ .Name }} </a>
+        </h2>
+        <h5 class="log-snark">
+          or... {{ .Params.snark }}
+        </h5>
+    </article>
+{{ end }}

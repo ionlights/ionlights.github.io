@@ -1,0 +1,53 @@
+.ionlights-brand {
+  color: #fefefe !important;
+  padding: 0.2rem 0.4rem;
+  // background: linear-gradient(90deg, #0d1784, #10a3ff);
+  background: linear-gradient(90deg, #3e1fa2, #0e5c8c);
+  font-family: Avenir !important;
+
+  &:before {
+    content: "ion";
+    // color: #d3edff;
+  }
+  &:after {
+    content: "lights";
+    // color: #32abff;
+  }
+}
+
+p, h1, h2, h3, h4, h5, h6, span, li {
+  .ionlights-brand {
+    font-size: inherit;
+  }
+}
+
+@import "includes/text";
+@import "includes/tags";
+
+@import "includes/breadcrumb";
+@import "includes/navigation";
+
+@import "layouts/base";
+@import "layouts/about";
+@import "layouts/home";
+@import "layouts/log_entry";
+@import "layouts/log_index";
+@import "layouts/now";
+@import "layouts/page";
+@import "layouts/post";
+
+// Overrides
+.btn, .card {
+  border-radius: 0;
+}
+
+body {
+  // background-color: #0f2331;
+  // background-color: #304757;
+  // background-color: #1e313e;
+  // background-color: #293b56;
+  // background-color: #203550;
+  // background-color: #e7f7ff;
+  background-color: #e1e4e8;
+  // background: linear-gradient(#304757 $navbar-min-height, #0f2331);
+}

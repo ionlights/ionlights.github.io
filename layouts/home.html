@@ -1,0 +1,22 @@
+{{ define "master-content" }}
+    <main class="container py-5">
+        <div class="row px-0 mx-0">
+          <div class="col-12 col-lg-7 px-lg-0 px-3 pr-lg-3 mb-lg-0 mb-3" id="std-text">
+            {{ .Content }}
+          </div>
+
+          <div class="col-12 col-lg-5 px-lg-0 px-3 pl-lg-5" id="updates">
+              {{ $sections := slice "projects" "outreach" "now" }}
+              {{ range $sections }}
+                {{ $section := . }}
+                {{ range last 1 (where $.Site.RegularPages.ByTitle "Section" $section)}}
+                    {{ if ne . nil }}
+                        {{ $id := delimit (slice "latest" $section "update") "-" }}
+                        {{ partial "modules/entry-sm.html" (dict "context" . "ID" $id)}}
+                    {{ end }}
+                {{ end }}
+              {{ end }}
+            </div>
+        </div>
+      </main>
+{{ end }}

@@ -1,0 +1,289 @@
+.ionlights-brand {
+  color: #fefefe !important;
+  padding: 0.2rem 0.4rem;
+  background: linear-gradient(90deg, #3e1fa2, #0e5c8c);
+  font-family: Avenir !important; }
+  .ionlights-brand:before {
+    content: "ion"; }
+  .ionlights-brand:after {
+    content: "lights"; }
+
+p .ionlights-brand, h1 .ionlights-brand, h2 .ionlights-brand, h3 .ionlights-brand, h4 .ionlights-brand, h5 .ionlights-brand, h6 .ionlights-brand, span .ionlights-brand, li .ionlights-brand {
+  font-size: inherit; }
+
+h1, h2, h3 {
+  font-family: "Markazi Text", serif;
+  margin: 0; }
+
+p, span, strong, em, li, h4, h5, h6 {
+  font-family: Avenir Next, San Francisco, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0; }
+
+pre, pre > span, code, code > span {
+  font-family: "anonymous-pro", monospace; }
+
+h1 {
+  font-size: 36px;
+  line-height: 1.5; }
+
+h2 {
+  font-size: 30px;
+  line-height: 1.5; }
+
+h3 {
+  font-size: 24px;
+  line-height: 1.5; }
+
+p, span, a {
+  font-size: 18px;
+  line-height: 1.5; }
+
+span.badge {
+  font-weight: 500; }
+
+div[class*="highlight"] {
+  font-family: "anonymous-pro", monospace; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  display: block; }
+
+p a, span a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, li a, h2:not(.log-title) a {
+  padding: 0 0.2rem;
+  color: inherit;
+  position: relative;
+  z-index: 10;
+  font-size: inherit;
+  display: inline-block; }
+  p a:after, span a:after, h1 a:after, h2 a:after, h3 a:after, h4 a:after, h5 a:after, h6 a:after, li a:after, h2:not(.log-title) a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #7f58ff;
+    z-index: -1;
+    transition: height 125ms cubic-bezier(0.075, 0.82, 0.165, 1); }
+  p a:hover, span a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, li a:hover, h2:not(.log-title) a:hover {
+    color: #fefefe;
+    text-decoration: none; }
+    p a:hover:after, span a:hover:after, h1 a:hover:after, h2 a:hover:after, h3 a:hover:after, h4 a:hover:after, h5 a:hover:after, h6 a:hover:after, li a:hover:after, h2:not(.log-title) a:hover:after {
+      height: 100%; }
+
+.btn-log-tags {
+  background: #fefefe; }
+  .btn-log-tags a:after {
+    height: 0; }
+
+.btn-sigai-primary {
+  color: #174a2f;
+  background: #41ff9a; }
+
+.btn-forage-primary {
+  color: #fefefe;
+  background: #fefefe; }
+
+.btn-now-primary {
+  color: #fefefe;
+  background: #fefefe; }
+
+.list-tags {
+  padding: 0.75rem 0.1 0.25rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.5; }
+
+.btn.btn-log-tags {
+  font-family: Avenir Next, San Francisco, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400; }
+
+.btn.btn-log-tags[class$="-primary"] {
+  font-weight: 500; }
+
+.btn.btn-builds {
+  background: #9ed8f1;
+  color: #0b181d; }
+  .btn.btn-builds-primary {
+    background: #009fe2;
+    color: #000000; }
+
+.btn.btn-feynman {
+  background: #a895ec;
+  color: #120050; }
+  .btn.btn-feynman-primary {
+    background: #4a16ff;
+    color: #faf9ff; }
+
+.btn.btn-outreach {
+  background: #a895ec;
+  color: #120050; }
+  .btn.btn-outreach-primary {
+    background: #4a16ff;
+    color: #faf9ff; }
+
+.btn.btn-research {
+  background: #a895ec;
+  color: #120050; }
+  .btn.btn-research-primary {
+    background: #4a16ff;
+    color: #faf9ff; }
+
+.btn.btn-thoughts {
+  background: #a895ec;
+  color: #120050; }
+  .btn.btn-thoughts-primary {
+    background: #4a16ff;
+    color: #faf9ff; }
+
+.ionlights-breadcrumb {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+  .ionlights-breadcrumb .breadcrumb-item {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0; }
+    .ionlights-breadcrumb .breadcrumb-item a {
+      text-decoration: none; }
+    .ionlights-breadcrumb .breadcrumb-item:before {
+      content: "";
+      padding: 0; }
+
+.ionlights-navbar {
+  min-height: 4rem;
+  line-height: 4rem;
+  padding: 0; }
+  .ionlights-navbar a, .ionlights-navbar span {
+    color: #34363a;
+    font-family: Avenir Next, San Francisco, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.ionlights-navbar .ionlights-brand {
+  padding: 0 1rem;
+  line-height: 4rem;
+  font-weight: 700;
+  margin: 0; }
+
+.navbar-toggler {
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  margin: 0 1rem;
+  transition: 124ms ease-in-out; }
+  .navbar-toggler span#menu-text {
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    font-size: 1rem; }
+    .navbar-toggler span#menu-text:after {
+      content: "\f0c9";
+      font-weight: 600;
+      padding-left: 0.375rem;
+      font-family: Font Awesome\ 5 Free;
+      font-size: 0.945rem; }
+  .navbar-toggler:hover {
+    background: rgba(194, 211, 228, 0.17); }
+
+.ionlights-navbar .ionlights-nav {
+  min-height: 4rem; }
+  .ionlights-navbar .ionlights-nav .nav-item.nav-link {
+    transition: 124ms ease-in-out;
+    padding: 0.5rem 1rem;
+    line-height: 3rem; }
+    .ionlights-navbar .ionlights-nav .nav-item.nav-link:hover, .ionlights-navbar .ionlights-nav .nav-item.nav-link.active {
+      background: rgba(194, 211, 228, 0.17); }
+    .ionlights-navbar .ionlights-nav .nav-item.nav-link.active {
+      font-weight: 500; }
+
+.ionlights-nav .btn-group, .ionlights-nav .dropdown {
+  margin: 0.75rem 1rem; }
+  .ionlights-nav .btn-group .btn, .ionlights-nav .dropdown .btn {
+    height: 2.5rem; }
+
+body#home .ionlights-navbar a, body#home .ionlights-navbar span {
+  color: #b7e1ff; }
+
+body#home {
+  background: linear-gradient(#304757 4rem, #0f2331); }
+  body#home main.container {
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center; }
+    body#home main.container .row {
+      justify-content: center; }
+      body#home main.container .row #std-text > p {
+        color: #fefefe;
+        font-size: 1.5em; }
+      body#home main.container .row div[class^="col-"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      body#home main.container .row div#updates article.log-entry div.log-header {
+        background: #d7dde0; }
+      body#home main.container .row div#updates article.log-entry h2.log-title {
+        color: #a6cad8; }
+      body#home main.container .row div#updates article.log-entry h5.log-snark {
+        padding: 1rem 0;
+        font-family: Avenir Next, San Francisco, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 400;
+        color: #667a82; }
+
+.log-entry h2.log-title {
+  font-size: 34px;
+  line-height: 40px; }
+
+.log-entry p.log-excerpt {
+  margin: 1em 0;
+  font-size: 1.15em;
+  line-height: 1.5; }
+
+#log-entry h2, #log-entry h3, #log-entry h4, #log-entry h5 {
+  padding-top: 1rem;
+  line-height: 1.5; }
+
+#log-entry p {
+  margin: 1em 0;
+  font-size: 1.15em;
+  line-height: 1.5em; }
+
+h1.log-header {
+  font-family: "anonymous-pro", monospace;
+  font-weight: bold;
+  padding: 1rem;
+  background: #62666b;
+  background: #33363a;
+  color: #009eff; }
+  h1.log-header:before {
+    content: ">>> "; }
+  h1.log-header:after {
+    content: ".log"; }
+
+div.log-project h1.log-heading {
+  font-size: 34px;
+  line-height: 40px; }
+
+article.log-entry h2.log-title {
+  font-size: 34px;
+  line-height: 40px; }
+
+article.log-entry p.log-excerpt {
+  margin: 0.5em 0;
+  font-size: 15px;
+  line-height: 1.5; }
+
+article.log-entry div.btn-log-date {
+  font-size: 13px;
+  color: #62666b; }
+
+div.log-heading {
+  text-align: center; }
+  div.log-heading h1.log-title {
+    font-size: 34px;
+    line-height: 40px; }
+
+.btn, .card {
+  border-radius: 0; }
+
+body {
+  background-color: #e1e4e8; }
+
+/*# sourceMappingURL=custom.css.map */

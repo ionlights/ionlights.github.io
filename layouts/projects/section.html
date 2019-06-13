@@ -1,0 +1,11 @@
+{{ define "page-header" }}
+<h1 class="display-3">{{ .Page.Name | title }}</h1>
+<h3> {{ .Page.Params.explanatory_blurb | safeHTML | emojify }} </h3>
+{{ end }}
+
+{{ define "content" }}
+    {{ $section := .Page.Section }}
+    {{ range (where .Site.RegularPages.ByTitle "Section" $section ).Reverse }}
+        {{ partial "modules/entry-lg.html" . }}
+    {{ end }}
+{{ end }}

@@ -1,0 +1,10 @@
+<article class="row mb-3 log-entry">
+    <div class="col-12 col-md-3 log-meta">
+        <div class="btn btn-log-date"> {{ .Date.Format "Jan 02" }} </div>
+        <a href="{{ .RelPermalink | path.Dir | path.Dir }}" class="btn btn-sm btn-log-tags"> {{ (index .Params (.Section | singularize)) }} </a>
+    </div>
+    <div class="col-12 col-md-9 log-body">
+        <h2 class="log-title"> <a href="{{ .RelPermalink }}"> {{ .Name | title }}</a> </h2>
+        <p class="log-excerpt">{{ .Summary }} </p>
+    </div>
+</article>

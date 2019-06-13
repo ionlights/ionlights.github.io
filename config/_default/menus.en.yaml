@@ -1,0 +1,13 @@
+main:
+  - name: projects
+    weight: 1
+    url: /projects/
+  - name: outreach
+    weight: 2
+    url: /outreach/
+  - name: now
+    weight: 3
+    url: /now/
+  - name: contact
+    weight: 4
+    url: /contact/

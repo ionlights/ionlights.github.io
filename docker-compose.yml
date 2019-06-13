@@ -1,7 +1,7 @@
-version: "3.3"
+version: "3.7"
 services:
   hugo:
-    image: jojomi/hugo:0.53
+    image: jojomi/hugo:0.55.5
     environment:
       - HUGO_WATCH=true
       # - HUGO_BASEURL=ionlights.com

@@ -1,0 +1,17 @@
+title: ionlights
+
+languageCode: en-us
+enableEmoji: true
+
+taxonomies:
+  tag: tags
+  category: categories
+  # project: projects
+  # outreach: outreach
+  # bookshelf: bookshelf
+  # now: now
+
+permalinks:
+  projects:  /:sections/:title/
+  outreach:  /:sections/:title/
+  bookshelf: /:sections/:title/

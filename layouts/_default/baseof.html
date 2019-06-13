@@ -1,0 +1,30 @@
+{{ partial "meta/head.html" . }}
+
+<body id="{{ .Page.Title }}">
+
+  {{ partial "meta/header.html" . }}
+
+  {{ block "master-content" . }}
+  <div class="container">
+    <div class="col-12 col-md-10 mx-auto">
+      <div class="py-5">
+        <div id="page-header">
+          {{ block "page-header" . }}
+            <h1 class="display-3">{{ .Page.Name | title }}</h1>
+          {{ end }}
+        </div>
+      </div>
+      <main class="pb-5">
+        {{ block "content" . }}
+        <div class="row px-3">
+            <article class="col-12 col-lg-8 mx-auto" id="log-entry">
+                {{ .Content }}
+            </article>
+        </div>
+        {{ end }}
+      </main>
+    </div>
+  </div>
+  {{ end }}
+
+</body>

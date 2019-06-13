@@ -1,0 +1,86 @@
+h1.log-header {
+  // font-size: 42px;
+  // line-height: 50px;
+  font-family: $font-code;
+  font-weight: bold;
+  padding: 1rem;
+  background: #62666b;
+  background: #33363a;
+  color: #009eff;
+  
+
+  &:before {
+    content: ">>> ";
+  }
+  &:after {
+    content: ".log"
+  }
+}
+
+div.log-project {
+  h1.log-heading {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  p.log-summary {
+
+  }
+}
+
+article.log-entry {
+  h2.log-title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  p.log-excerpt {
+    // 1em is 16px for Roboto
+    margin: 0.5em 0;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  div.btn-log-date {
+    font-size: 13px;
+    // color: #babdc1;
+    color: #62666b;
+  }
+}
+
+div.log-heading {
+  text-align: center; 
+
+  h1.log-title {
+    font-size: 34px;
+    line-height: 40px;
+    // font-family: $font-code;
+    // background: #d6dde0;
+    // font-weight: bold;
+    // color: #6b7275;
+  }
+}
+
+// div.log-entry.card {
+//   background: #304757;
+//   div.log-header.card-header {
+//     // display: flex;
+//     // flex-direction: row;
+//     background: #d7dde0;
+//   }
+//   div.log-excerpt {
+//     h3.log-title {
+//       font-family: $font-sans;
+//       font-weight: 700;
+//       // color: #3e4c52;
+//       color: #0d3140;
+//     }
+//     h5.log-snark {
+//       font-family: $font-sans;
+//       font-weight: 500;
+//       color: #667a82;
+//     }
+//     p {
+//       margin: 0;
+//     }
+//   }
+// }

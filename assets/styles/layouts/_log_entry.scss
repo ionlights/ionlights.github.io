@@ -1,0 +1,22 @@
+.log-entry {
+  h2.log-title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  p.log-excerpt {
+    margin: 1em 0;
+    font-size: 1.15em;
+    line-height: 1.5;
+  }
+}
+#log-entry {
+  h2, h3, h4, h5 {
+    padding-top: 1rem;
+    line-height: 1.5;
+  }
+  p {
+    margin: 1em 0;
+    font-size: 1.15em;
+    line-height: 1.5em;
+  }
+}

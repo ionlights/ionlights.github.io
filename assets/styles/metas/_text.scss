@@ -1,0 +1,27 @@
+h1 {
+    font-size: 2.333333 * $font-atom;
+    line-height: 4 * $font-atom;
+    color: $brand-wht-txt;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.75 * $font-atom;
+    line-height: 3 * $font-atom;
+    color: $brand-wht-txt;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.1666667 * $font-atom;
+    line-height: 2 * $font-atom;
+    color: $brand-wht-txt;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.25 * $font-atom;
+    line-height: 1.5 * $font-atom;
+    color: $brand-wht-txt;
+    font-weight: normal;
+}

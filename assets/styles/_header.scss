@@ -1,0 +1,102 @@
+$font-atom-nav: 1.1666666667 * $font-atom;
+$font-line-nav: 4 * $font-atom;
+$font-nav: #{$font-atom-nav}/$font-line-nav $font-family;
+
+header {
+  display: flex;
+  z-index: 10000;
+  font: $font-nav;
+  font-weight: bold;
+  position: relative;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 8 * $font-atom;
+  justify-content: space-between;
+  padding: 0 10 * $base-unit;
+
+  div#site-logo {
+    width: 8 * $font-atom;
+    height: 8 * $font-atom;
+    display: block;
+    align-self: flex-start;
+
+    svg {
+      height: inherit;
+      width: inherit;
+      background: $brand-blk-txt;
+
+      g#partial-initials {
+        fill: #00bcff;
+      }
+    }
+  }
+
+  div#nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    p#current-page {
+      font: inherit;
+      color: $brand-blue;
+      line-height: 4 * $font-atom;
+      margin: 0 $font-atom 0 0;
+    }
+
+    div#menu-toggle-open {
+      line-height: 8 * $font-atom;
+      cursor: pointer;
+    }
+  }
+}
+
+div#menu {
+  right: 0;
+  height: 100vh;
+  position: fixed;
+  font: $font-nav;
+  z-index: 1000000;
+  font-weight: bold;
+  background: #f0f5f8;
+  border-style: solid;
+  border-color: transparent;
+  width: 32 * $base-unit;
+  box-sizing: border-box;
+  padding-right: 8 * $base-unit;
+  transform: translateX(32 * $base-unit);
+  transition: 256ms ease-in-out;
+  div#menu-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 8 * $base-unit;
+    justify-content: space-between;
+
+    p {
+      font: inherit;
+      color: $brand-blk-txt;
+      line-height: 4 * $font-atom;
+      margin-left: 2 * $base-unit;
+    }
+
+    div#menu-toggle-close {
+      cursor: pointer;
+      line-height: 8 * $font-atom;
+      margin-right: 2 * $base-unit;
+    }
+  }
+
+  ul#menu-links {
+    padding: 0;
+    margin: 0;
+    li.menu-link {
+      padding: 0;
+      list-style: none;
+      a {
+        font: inherit;
+        display: block;
+        color: $brand-gry-txt;
+        padding-left: 2 * $base-unit;
+      }
+    }
+  }
+}

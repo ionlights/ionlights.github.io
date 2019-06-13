@@ -1,0 +1,46 @@
+body#home {
+  background: linear-gradient(#304757 $navbar-min-height, #0f2331);
+
+  main.container {
+    min-height: calc(100vh - #{$navbar-min-height});
+    display: flex;
+    justify-content: center;
+
+    .row {
+      justify-content: center;
+      #std-text > p {
+        color: #fefefe;
+        font-size: 1.5em;
+      }
+
+      div[class^="col-"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      div#updates {
+        article.log-entry {
+          // background: transparent;
+          // background: #304757;
+          div.log-header {
+            background: #d7dde0;
+          }
+          h2.log-title {
+            color: #a6cad8;
+            // font-family: $font-sans;
+            // font-weight: 700;
+            // color: #3e4c52;
+            // color: #42c6ff;
+          }
+          h5.log-snark {
+            padding: 1rem 0;
+            font-family: $font-sans;
+            font-weight: 400;
+            color: #667a82;
+          }
+        }
+      }
+    }
+  }
+}
