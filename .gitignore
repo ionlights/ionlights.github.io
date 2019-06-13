@@ -1,2 +1,5 @@
 public/
 .idea/
+
+*.rsl*
+.DS_Store
