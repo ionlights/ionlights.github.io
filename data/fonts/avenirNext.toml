@@ -1,0 +1,12 @@
+# Font style metadata
+name = "Avenir Next"
+
+# Font families
+heading_font = "Avenir Next"
+body_font = "Avenir Next"
+nav_font = "Avenir Next"
+mono_font = "Fira Mono"
+
+# Font size
+font_size = "20"
+font_size_small = "16"

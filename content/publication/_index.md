@@ -12,4 +12,9 @@ view: 4
 header:
   caption: ""
   image: ""
+
+aliases: ["/publications/"]
+
+slug: ""
+  
 ---

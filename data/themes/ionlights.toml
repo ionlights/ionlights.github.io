@@ -1,0 +1,19 @@
+# Theme metadata
+name = "ionlights"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#0e5c8c"
+
+# Menu
+menu_primary = "#e8eef7"
+menu_text = "#545d6b"
+menu_text_active = "#0e5c8c"
+menu_title = "#fff"
+
+# Backgrounds
+background = "#e8eef7"
+home_section_odd = "#d6e0ef" # "#e1e4e8"
+home_section_even = "#e8eef7"
