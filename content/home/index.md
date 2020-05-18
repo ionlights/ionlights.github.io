@@ -1,6 +1,4 @@
-+++
-# Homepage
-type = "widget_page"
-headless = false  # Homepage is headless, other widget pages are not.
-showFooter = false
-+++
+---
+type: "widget_page"
+headless: true  
+---
