@@ -1,13 +1,14 @@
 ---
 title: "Foraging for Research"
 subtitle: "or... Dumpster Diving for Papers"
+type: post
 
 summary: "It takes time to learn the intuition behind Information Gain... We're
 setting out to accelerate that."
 
 authors: ["ionlights"]
 tags: ["nlp", "data-vis", "ml"]
-categories: ["scientific-literacy"]
+categories: ["Scientific Literacy"]
 
 date: 2018-06-17T23:34:09-04:00
 lastmod: 2018-06-19T23:34:09-04:00
