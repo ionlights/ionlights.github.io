@@ -3,7 +3,8 @@ version: "3"
 services:
   hugo:
     image: jojomi/hugo
-    container_name: "brand-hugo"
+    container_name: "john-muchovej-com"
+    hostname: "john.muchovej.com"
     restart: unless-stopped
     environment:
       - HUGO_THEME=academic
