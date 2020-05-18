@@ -1,0 +1,31 @@
+<footer class="site-footer">
+  {{ with site.GetPage "privacy.md" }}
+  <p class="powered-by">
+    {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+  </p>
+  {{ end }}
+
+  <p class="powered-by" style="display: flex; justify-content: space-between;">
+    <a href="https://www.netlify.com">
+      <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+    </a>
+
+    <span style="margin: auto 0;">
+      {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+    </span>
+
+    {{ if ne .Type "docs" }}
+    <span style="margin: auto 0;" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    {{ end }}
+  </p>
+</footer>

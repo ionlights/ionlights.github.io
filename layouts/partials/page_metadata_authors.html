@@ -1,0 +1,25 @@
+{{/* Display author list. */}}
+
+{{ $taxonomy := "authors" }}
+{{ with .Param $taxonomy }}
+  {{ range $index, $value := . }}
+    {{- $profile_page := site.GetPage (printf "/%s/%s" $taxonomy (. | urlize)) -}}
+
+    {{- $name := $profile_page.Params.name | default ($value|markdownify) -}}
+
+    {{- if and (eq $.Type "publication") (in $value site.Params.mainAuthor) -}}
+       {{- $name = (printf "__%s__" $name) }}
+    {{- end -}}
+
+    {{ $name = $name | markdownify -}}
+
+    {{- if gt $index 0 }}, {{ end -}}
+    <span itemprop="author name" itemtype="http://schema.org/Person">
+      {{- if $profile_page.Params.name -}}
+        <a href="{{ $profile_page.RelPermalink }}">{{ $name }}</a>
+      {{- else -}}
+        {{ $name }}
+      {{- end -}}
+    </span>
+  {{- end -}}
+{{ end }}
