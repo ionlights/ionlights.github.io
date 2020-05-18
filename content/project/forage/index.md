@@ -5,6 +5,8 @@ summary: >-
   heads-or-tails of it. Forage is a summarization and visualization tool to make
   understanding much more straightforward.
    
+url: forage
+
 authors: [ionlights, David Wright, Felix Sosa, Daniel Ohana]
 tags: [nlp, data-vis, ml]
 categories: [Scientific Literacy, Democratizing Education, Open Science]

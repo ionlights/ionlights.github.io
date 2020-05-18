@@ -4,6 +4,8 @@ summary: >-
   A semi-freuqntly updated list of materials I'm reading, have read, or 
   plan to read.
 
+slug: readings
+
 authors: 
   - ionlights
 

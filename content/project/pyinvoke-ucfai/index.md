@@ -8,6 +8,8 @@ summary: >-
   was predictable. Before moving on, I migrated that system to PyInvoke
   and GitHub Actions.
 
+url: pyinvoke-ucfai
+
 authors: [ionlights]
 tags: [ucfai, automation]
 categories: [ucfai]

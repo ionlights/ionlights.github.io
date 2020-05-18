@@ -5,6 +5,8 @@ summary: >-
   CogSci before grad school, and a drive to document my journey from CS
   (Computer Science) into CS (Cognitive Science).
 
+slug: 100-days-cogsci
+
 authors: 
   - ionlights
 
@@ -16,7 +18,7 @@ tags:
 categories:
   - learning
 
-date: 2020-04-30T04:57:22-04:00
+date: 2020-05-01T04:57:22-04:00
 draft: true
 
 # Optional external URL for project (replaces project detail page).
