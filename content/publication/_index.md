@@ -1,6 +1,10 @@
 ---
 title: Publications
 
+url: /publications
+aliases:
+  - /publication
+
 # View.
 #   1 = List
 #   2 = Compact
@@ -12,9 +16,4 @@ view: 4
 header:
   caption: ""
   image: ""
-
-aliases: ["/publications/"]
-
-slug: ""
-  
 ---
