@@ -1,0 +1,17 @@
+#!/usr/bin/env fish
+
+set arg $argv[1]
+
+switch $arg
+    case up
+        docker-compose up -d
+    case new
+        docker-compose exec hugo hugo new $argv
+    case down
+        docker-compose down
+    case update
+        docker-compose exec hugo /src/update
+    case restart
+        docker-compose down
+        docker-compose up -d
+end
