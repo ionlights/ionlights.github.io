@@ -1,10 +1,15 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
-title: "Analyzing Sentence Fusion in Abstractive Summarization"
-authors: ["Logan Lebanoff", "ionlights", "Fei Liu"]
+title: Analyzing Sentence Fusion in Abstractive Summarization
+authors: 
+  - Logan Lebanoff
+  - ionlights
+  - Franck Dernoncourt
+  - Doo Soon Kim
+  - Seokhwan Kim
+  - Walter Chang
+  - Fei Liu
 date: 2019-11-05T00:00:00-04:00 
-doi: ""
+doi: "10.18653/v1/D19-5413"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2019-08-13T00:00:00-04:00
@@ -16,8 +21,10 @@ publishDate: 2019-08-13T00:00:00-04:00
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Empirical Methods for Natural Language Processing"
-publication_short: "EMNLP"
+publication: >-
+  Empirical Methods for Natural Language Processing: Proceedings of the 2nd
+  Workshop on New Frontiers in Summarization
+publication_short: EMNLP NewSum
 
 abstract: >-
   Sentence fusion remains a challenging task for summarization systems. Multiple
@@ -49,7 +56,6 @@ tags: ["nlp"]
 categories: ["research"]
 featured: false
 
-url_pdf: static/pdfs/emnlp2019-fusion-summarization.pdf
 url_code: https://github.com/loganlebanoff/correct_summarization
 
 # Featured image
@@ -59,5 +65,4 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
-
 ---
