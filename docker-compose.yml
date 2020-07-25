@@ -2,20 +2,25 @@ version: "3"
 
 services:
   hugo:
-    image: jojomi/hugo
+    image: jojomi/hugo:0.65.0
     container_name: "john-muchovej-com"
     hostname: "john.muchovej.com"
     restart: unless-stopped
+    volumes:
+      - .:/src
+      # use the volume mount below to inspect the hugo output, IFF needed
+      # - ./build:/output
     environment:
       - HUGO_THEME=academic
       - HUGO_WATCH=1
       # - HUGO_DESTINATION=/output
       - HUGO_REFRESH_TIME=60
       # - HUGO_BASEURL=john.muchovej.com
-    volumes:
-      - .:/src
-      # - ./output:/output
-    ports: [ "1313:1313", ]
+    ports: [ "5646:5646", ]
     command:
-      - /run.sh
+      - /run.sh  # from Dockerfile
+      - --buildFuture
       - --disableFastRender
+      - --verbose
+      - --port=5646
+      - --liveReloadPort=5646
