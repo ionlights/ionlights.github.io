@@ -1,5 +1,6 @@
 public/
 .idea/
+.vscode
 
 *.rsl*
 .DS_Store
