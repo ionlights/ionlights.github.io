@@ -17,7 +17,7 @@ day_night = false
 #   Latest font sets (may require updating): https://sourcethemes.com/academic/themes/
 #   Browse built-in font sets in `themes/academic/data/fonts/`
 #   Browse user installed font sets in `data/fonts/`
-font = "avenirnext"
+font = "proximanova"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
@@ -57,8 +57,9 @@ social, linguistic, and common sense abilities.
 # Enable source code highlighting? true/false
 # Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
 highlight = true
-highlight_languages = ["python", "js", "r", "yaml"]  # Add support for highlighting additional languages
-highlight_style = "atom-one-dark-reasonable"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
+highlight_languages = ["python", "js", "r", "yaml", "julia"]  # Add support for highlighting additional languages
+# highlight_style = "atom-one-dark-reasonable"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
+highlight_style = "obsidian"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
@@ -75,7 +76,7 @@ privacy_pack = false
 
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
-edit_page = {repo_url = "https://github.com/ionlights/site", content_dir = "", repo_branch = "master", editable = {docs = true, page = false, post = false}}
+edit_page = { repo_url = "https://github.com/ionlights/ionlights", content_dir = "content", repo_branch = "master", editable = { docs = true, page = false, post = true, } }
 
 ############################
 ## Contact details
@@ -90,11 +91,10 @@ phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "", city = "", region = "", postcode = "", country = "", country_code = ""}
-
+address = { street = "", city = "", region = "", postcode = "", country = "", country_code = "", } 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "", longitude = ""}
+coordinates = {latitude = "", longitude = "" }
 
 # Directions for visitors to locate you.
 directions = ""
@@ -126,7 +126,8 @@ twitter = "ionlights"
 
 # Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
 #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-date_format = "Jan 2, 2006"
+date_format = "Mon, Jan 2, 2006"
+
 #   Examples: "3:04 pm" or "15:04"
 time_format = "15:04"
 
@@ -138,7 +139,9 @@ address_format = "en-us"
 ############################
 
 # Main menu alignment (l = left, c = center, r = right) and logo options.
-main_menu = {align = "c", show_logo = true}
+[main_menu]
+  align = "l"
+  show_logo = true
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
@@ -166,7 +169,8 @@ plugins_js  = []
 [avatar]
   # Get user avatars from Gravatar.com? (true/false)
   gravatar = false
-
+  # Get user avatars from GitHub.com? (true/false)
+  github = true
   # Choose a shape for avatar images. Options: circle, square.
   shape = "circle"
 
