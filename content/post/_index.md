@@ -2,7 +2,7 @@
 title: Thoughts
 subtitle: Guides & Opinions
 
-view: 3  # 1=list, 2=compact, 3=card
+view: 2  # 1=list, 2=compact, 3=card
 
 # Optional header image (relative to `static/img/` folder).
 header:
@@ -12,6 +12,7 @@ header:
 url: /thoughts
 aliases:
   - /post
+  - /posts
 ---
 
 {{% alert note %}}
