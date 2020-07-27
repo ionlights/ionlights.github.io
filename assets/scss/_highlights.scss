@@ -1,0 +1,26 @@
+pre {
+  // box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px 4px rgba(23, 23, 23, 0.38);
+  &:before {
+
+  }
+
+  code.hljs {
+    padding: 1em;
+  }
+}
+
+code {
+  padding: 0.1em 0.4em;
+  border-radius: 0.25em;
+  background-color: rgba(32, 42, 49, 0.22);
+  color: #04253a;
+}
+
+.gist {
+  td {
+    border: 0;
+  }
+}
+
+@import "obsidian";
