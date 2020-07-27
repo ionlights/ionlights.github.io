@@ -45,19 +45,20 @@ abstract: >-
 
 # Summary. An optional shortened abstract.
 summary: >-
-  A new framework for generating summaries which stay true to their source
-  sentences.
+  We investigate seemingly simple tasks for humans, relating subjects and pronouns
+  together. Additionally, we've developed a labeled dataseet for use.
 
 # Summarizing documents is a challenging, but necessary, task. We use summaries
 # on a daily basis to make decisions and learn new happenings. However, 
 # summarization is challenging for humans and more so for machines. **We
 # analyzed **
 
-tags: ["nlp", "points-of-correspondence", ]
-categories: ["research"]
+tags: [ Natural Language processing, Points of Correspondence, ]
+categories: [ Research, Summarization, ]
 featured: false
 
-url_code: https://github.com/loganlebanoff/correct_summarization
+url_code: https://github.com/ucfnlp/points-of-correspondence
+url_dataset: https://github.com/ucfnlp/points-of-correspondence/blob/master/PoC_dataset.json
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
