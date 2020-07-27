@@ -1,5 +1,5 @@
 ---
-name: John Muchovej
+title: John Muchovej
 
 authors:
 - ionlights
@@ -9,8 +9,10 @@ superuser: true
 role: Researcher & Data Scientist
 
 organizations:
-- name: MIT
-  url: "https://mit.edu/"
+- name: Harvard CoCoDev
+  url: "https://cocodev.org/"
+- name: CBMM@MIT
+  url: "https://cbmm.mit.edu/"
 - name: Toptal
   url: "https://toptal.com/resume/john-muchovej"
 
@@ -79,7 +81,7 @@ questions I can answer/guide on, take a look [here][profile]._
 - **I'm always down to chat with people interested in getting into
 research!** Please feel free to take a look at talks I've given and guides
 I've [posted here][research]. If you still have questions or just want to
-chat, feel free to email me at `<first-name>[at]<this-website>`.
+chat, feel free to email me at `<first-name>[at]<last-name>[dot]com`.
 
 
 [now]: /now/latest
