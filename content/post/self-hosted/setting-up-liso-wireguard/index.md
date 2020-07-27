@@ -1,22 +1,19 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
-url: setting-up-lsio-wireguard
-
 title: "Setting up linuxserver/wireguard"
 subtitle: "Putting your docker stack behind a VPN."
 summary: >-
-  Post-Net-Neutrality, VPNs are a great thing (they were before,  too). Using
-  a VPN, though, is a bit a paint when it comes to Docker as most VPNs expect
+  Post Net-Neutrality, VPNs are a great thing (they were before,  too). Using
+  a VPN, though, is a bit of a pain when it comes to Docker. Most VPNs expect
   to take over a network interface and have GUI apps associated with them.
   Let's see how to pipe your Docker traffic through Wireguard using Docker.
 
-authors: [ionlights]
+authors: [ ionlights, ]
 
-tags: []
-categories: []
+tags: [ Homelab, Networking, VPNs, ]
+categories: [ Guides, ]
 
 date: 2020-04-30T08:47:28Z
-lastmod: 2020-04-30T08:47:28Z
 
 featured: false
 draft: false
@@ -34,7 +31,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: [homelab, ]
+projects: [ self-hosted, ]
 ---
 
 {{< alert info >}}
@@ -56,7 +53,7 @@ modifications, though, so come back once you've copied the `docker run` or
 
 </center>
 
-[lsio/wg]: https://hub.docker.com/r/linuxserver/wireguard
+[lsio/wg]: https://docs.linuxserver.io/images/docker-wireguard
 
 {{< alert primary >}}
 I recommend using `docker-compose` as it's the most verbose and straightforward
@@ -71,7 +68,7 @@ changes:
 version: "3"
 services:
   wireguard:
-    image: linuxserver/wireguard
+    image: linuxserver/wireguard:latest
     container_name: wireguard
     # the rest of your wireguard configuration
     restart: unless-stopped
@@ -84,15 +81,16 @@ services:
 - [ ] Ensure that you're using `docker-compose` 3.8+; you can guarantee this
       by just putting: `version: "3"` in your `docker-compose.yml`.
 - [ ] On the remaining configurations add two lines:
-      1. `network_mode: "service:wireguard"` – This was added in
-         `docker-compose=3.8` and directs traffic to the service's container.
-      3. `depends_on: [ "wireguard", ]` – This guarantees that the container
-         won't start until `wireguard` has.
+  1. `network_mode: "service:wireguard"` – This was added in
+     `docker-compose=3.8` and directs traffic to the service's container.
+  1. `depends_on: [ "wireguard", ]` – This guarantees that the container
+     won't start until `wireguard` has.
 
 Now that your `docker-compose` is pushing traffic through your wireguard
 container, you need to setup a VPN. There are a host of options out there with
 **`wireguard` support**, e.g.
 1. [MullvadVPN](https://mullvad.net/)
+1. [Firefox VPN](https://vpn.firefox.com/) (backed by MullvadVPN)
 1. [Algo, by Trail of Bits](https://github.com/trailofbits/algo) 
 1. Other more common VPNs, like NordVPN, PrivateInternetAccess, Tunnelbear, etc.
 
@@ -160,3 +158,9 @@ while also having all it's traffic pushed through your VPN of choice.
 and files! :smiley:**
 
 </center>
+
+<small>
+
+*Edited (25 Jul 2020):* Fixed formatting and added Firefox VPN.
+
+</small>
