@@ -1,0 +1,9 @@
+main:
+- { weight: 20, url: "/projects", name: "Projects" }
+- { weight: 30, url: "/publications", name: "Publications" }
+- { weight: 40, url: "/thoughts", name: "Thoughts" }
+- { weight: 50, url: "/now", name: "Now" }
+
+main_right:
+- { weight: 10, url: "/#contact", name: "Contact" }
+- { weight: 20, url: "/files/cv-muchovej.pdf", name: "CV" }
