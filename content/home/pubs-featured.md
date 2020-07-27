@@ -4,7 +4,7 @@ headless: true
 active: false
 weight: 40
 
-title: "Feature work"
+title: "Representative works"
 subtitle: "I really liked these topics and findings"
 
 content:
