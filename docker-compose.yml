@@ -2,9 +2,9 @@ version: "3"
 
 services:
   hugo:
-    image: jojomi/hugo:0.65.0
-    container_name: "john-muchovej-com"
-    hostname: "john.muchovej.com"
+    image: jojomi/hugo:0.72.0
+    container_name: "ionlights-com"
+    hostname: "ionlights.com"
     restart: unless-stopped
     volumes:
       - .:/src
