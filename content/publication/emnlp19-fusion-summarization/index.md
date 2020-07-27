@@ -52,8 +52,8 @@ source sentences."
 # summarization is challenging for humans and more so for machines. **We
 # analyzed **
 
-tags: ["nlp"]
-categories: ["research"]
+tags: [ Natural Language Processing, Sentence Fusion, ]
+categories: [ Research, Summarization, ]
 featured: false
 
 url_code: https://github.com/loganlebanoff/correct_summarization
