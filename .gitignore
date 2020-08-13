@@ -5,3 +5,6 @@ public/
 *.rsl*
 .DS_Store
 resources/
+
+# Local Netlify folder
+.netlify
