@@ -11,13 +11,13 @@ mainAuthor = "ionlights"
 theme = "ionlights"
 
 # Enable users to switch between day and night mode?
-day_night = false
+day_night = true
 
 # Override the theme's font set (optional).
 #   Latest font sets (may require updating): https://sourcethemes.com/academic/themes/
 #   Browse built-in font sets in `themes/academic/data/fonts/`
 #   Browse user installed font sets in `data/fonts/`
-font = "proximanova"
+font = "source_sans_pro"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
@@ -43,9 +43,8 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = """
-John Muchovej works at the intersection of Computer Science, Cognitive Science,
-and Developmental Psychology to advance our understanding of how we develop our
+description = """John Muchovej works at the intersection of Computer Science, Cognitive
+Science, and Developmental Psychology to advance our understanding of how we develop our
 social, linguistic, and common sense abilities.
 """
 
@@ -277,3 +276,9 @@ plugins_js  = []
 [cms]
   # See https://sourcethemes.com/academic/docs/install/#install-with-web-browser
   netlify_cms = true
+
+############################
+## Icon Pack Extensions
+############################
+[icon.pack]
+  ai = true  # Academicons icon pack https://jpswalsh.github.io/academicons/
