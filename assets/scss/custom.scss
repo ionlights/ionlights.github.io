@@ -6,3 +6,67 @@
 table {
     display: table;
 }
+
+.media img {
+    border-radius: 0.5em;
+    background-color: $sta-dark-menu-text;
+}
+
+html body {
+    color: $sta-menu-text !important;
+}
+
+html body.dark {
+    color: $sta-dark-menu-text !important
+}
+
+h1, h2, h3, h4, h5, h6, i, p, span, b {
+    color: inherit !important;
+}
+
+
+body {
+    color: $sta-menu-text !important;
+    hr {
+        background: $sta-menu-text !important;
+        background-image: transparent;
+    }
+}
+
+body.dark {
+    color: $sta-dark-menu-text !important;
+    hr {
+        background: $sta-dark-menu-text !important;
+        background-image: transparent;
+    }
+}
+
+.article-style {
+    overflow: visible;
+    h1, h2, h3, h4, h5, h6 {
+        &:before {
+            transition: all 200ms ease-in;
+            content: "\f0c1";
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            transform: translate(-100%, 12.5%);
+            position: absolute;
+            font-size: 75%;
+            margin: auto 0;
+            color: rgba($sta-primary, 0.5);
+            opacity: 0;
+            visibility: hidden;
+        }
+        &:hover {
+            &:before {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(-125%, 12.5%);
+            }
+        }
+    }
+}
+
+img {
+    border-radius: 5% !important;
+}

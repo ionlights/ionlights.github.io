@@ -1,0 +1,14 @@
+# Font style metadata
+name = "Lato"
+
+google_fonts = "family=Lato:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fira+Code:wght@300;400;500;600;700"
+
+# Font families
+heading_font = "Lato"
+body_font = "Lato"
+nav_font = "Lato"
+mono_font = "Fira Code"
+
+# Font size
+font_size = "20"
+font_size_small = "16"

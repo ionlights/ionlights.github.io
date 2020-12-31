@@ -2,18 +2,46 @@
 name = "ionlights"
 
 # Is theme light or dark?
-light = true
+is_light = false
 
-# Primary
-primary = "#0e5c8c"
+# primary = "#0e5c8c"
+primary = "#1282c7"
+# primary = "#2c3e50"
 
-# Menu
-menu_primary = "#e8eef7"
-menu_text = "#545d6b"
-menu_text_active = "#0e5c8c"
-menu_title = "#fff"
+# 1abc9c
+# 95a5a6
+# 2980b9
+# 2c3e50
 
-# Backgrounds
-background = "#e8eef7"
-home_section_odd = "#d6e0ef" # "#e1e4e8"
-home_section_even = "#e8eef7"
+# 1d2224
+# 9aaab0
+
+# e7eef4
+# 9aaab0
+
+[dark]
+  background = "#1d2224"
+  home_section_odd = "#1d2224"
+  home_section_even = "#1d2224"
+  
+  menu_primary = "#1d2224"
+#   menu_text = "#9aaab0"
+  menu_text = "#9aaab0"
+  menu_text_active = "#0e5c8c"
+  menu_title = "#fff"
+  text_color = "#9aaab0"
+
+[light]
+  background = "#e7eef4"
+  home_section_odd = "#e7eef4"
+  home_section_even = "#e7eef4"
+#   background = "#e8eef7"
+#   home_section_odd = "#d6e0ef" # "#e1e4e8"
+#   home_section_even = "#e8eef7"
+
+  menu_primary = "#e7eef4"
+#   menu_text = "#545d6b"
+  menu_text = "#4e5d63"
+  menu_text_active = "#0e5c8c"
+  menu_title = "#fff"
+  text_color = "#9aaab0"
