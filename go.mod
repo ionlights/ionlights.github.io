@@ -1,4 +1,4 @@
-module github.com/wowchemy/starter-academic
+module github.com/ionlights/ionlights
 
 go 1.15
 
