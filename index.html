@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect to john.muchovej.com</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- partial:index.partial.html -->
+  <div id="particles-background" class="vertical-centered-box"></div>
+  <div id="particles-foreground" class="vertical-centered-box"></div>
+
+  <div class="content">
+    <div id="loader">
+      <div class="loader-circle"></div>
+      <div class="loader-line-mask">
+        <div class="loader-line"></div>
+      </div>
+      <img id="avatar" src="" />
+    </div>
+    <p id="redirect">Redirecting you to <a id="link" href=""></a> in a moment</p>
+  </div>
+
+  <script>
+    var $url = "https://john.muchovej.com";
+    document.getElementById("avatar").src = `${$url}/authors/ionlights/avatar.jpg`;
+
+    var $base = $url.replace(/^https?\:\/\//i, "");
+    var $link = document.getElementById("link");
+
+    document.title = `Redirect to ${$base}`;
+
+    link.innerText = $base;
+    link.href = $url;
+
+    setTimeout(function() { window.location = $url; }, 3000);
+  </script>
+  <!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
